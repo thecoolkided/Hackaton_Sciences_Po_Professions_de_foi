@@ -1,6 +1,4 @@
-def user_message(inquiry):
-    user_message = (
-    f"""
+"""
             Tu es chercheur en sciences politiques. Ta tâche est d'associer des informations contenues des textes issus de fichiers csv à des catégories prédéfinies. Voici la liste des catégories avec un exemple et une description du contenu qui doit lui être associé sous la forme (catégorie | exemple | description): 
 
             (dc:identifier | LG17-75-1-VÉRON-12-tour1-profession_foi.pdf | nom du fichier dans Regards citoyens.
@@ -309,5 +307,3 @@ def user_message(inquiry):
             >>>
 
             """
-  )
-    return user_message
