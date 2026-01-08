@@ -16,7 +16,7 @@ Les fournisseurs de LLM ont mis à disposition des guides  :
 - Mistral : https://colab.research.google.com/github/mistralai/cookbook/blob/main/mistral/prompting/prompting_capabilities.ipynb
 - OpenAI : https://colab.research.google.com/github/EnkrateiaLucca/oreilly_live_training_llm_apps/blob/main/notebooks/1.0-Intro-ChatGPT-API-prompt-basics.ipynb
   
-     ⚠️ Il faut nécessairement une clé API 
+⚠️ Il faut nécessairement une clé API 
 
 La version finale du prompt est disponible sur le GitHub sous le nom : promptSciencesPo. 
 
