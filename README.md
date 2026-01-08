@@ -22,7 +22,7 @@ Pour ces tests, nous avons constitué un un fichier-échantillon csv composé de
 
 ### Modèle 1.1 - Mistral Large 3 de Mistral 
 
-Mistral Large 3 est le dernier gros modèle généraliste de chez Mistral. Nous avons choisi de l'utiliser parce qu'il est très performant malgré une relative lenteur. 
+Mistral Large 3 est le dernier gros modèle généraliste de chez Mistral. Nous avons choisi de l'utiliser parce qu'il est très performant malgré sa relative lenteur. 
 
 Test sur 5 professions de foi issues d'un même fichier CSV --> taux de réussite estimé : 92%. 
 
