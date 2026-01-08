@@ -9,7 +9,7 @@ Les documents _falc ont été supprimés en premier lieu de la base de données 
 
 **Methode 1**
 
-La bibliothèque pdfplumber est conçue pour extraire le contenu des fichiers PDF, en mettant l'accent sur le texte, les tableaux et la structure des coordonnées de la page. Il s'agit d'un moyen rapide et peu coûteux de traiter les fichiers PDF, qui a d'abord été utilisé sur un ensemble de données.
+La bibliothèque **PyMuPDF (fitz)** est utilisée pour l’extraction du texte à partir des fichiers PDF. Elle permet un traitement rapide et efficace des documents, en donnant accès au contenu textuel structuré par pages et blocs, et a été appliquée au corpus initial.
  
 Un résultat positif a été obtenu pour la plupart des fichiers PDF. **3085 fichiers** sur 14 631 se sont avérés être des fichiers PDF dont il était impossible d'extraire le texte, car celui-ci faisait partie intégrante de l'image. Pour ces fichiers, une méthode supplémentaire d'extraction de texte a été utilisée.
 
