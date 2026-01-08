@@ -34,6 +34,8 @@ Liste des mpodèles proposés mis à disposition par :
 - Mistral : https://docs.mistral.ai/getting-started/models
 - OpenAI : https://platform.openai.com/docs/models
 
+Les résultats des tests sont disponibles dans le fichier tests
+
 ### Modèle 1.1 - Mistral Large 3 de Mistral 
 
 Mistral Large 3 est le dernier gros modèle généraliste de chez Mistral. Nous avons choisi de l'utiliser parce qu'il est très performant malgré sa relative lenteur. 
