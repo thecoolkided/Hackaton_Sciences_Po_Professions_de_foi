@@ -1,0 +1,1 @@
+Batchs extraits de l'OCR Mistral. 
