@@ -18,6 +18,8 @@ Repo du projet professions de foi de Sciences Po. Détails des méthodes utilis�
 Tests de différents LLM et différents modèles de LLM afin de déterminer quel LLM et quel modèle serait le plus à même de répondre à nos besoins.
 La sélection a été faite en fonction de la performance affichée et de la rapidité du modèle. 
 
+Pour ces tests, nous avons constitué un un fichier-échantillon csv composé de 5 professions de foi. 
+
 ### Modèle 1.1 - Mistral Large 3 de Mistral 
 
 Mistral Large 3 est le dernier gros modèle généraliste de chez Mistral. Nous avons choisi de l'utiliser parce qu'il est très performant malgré une relative lenteur. 
