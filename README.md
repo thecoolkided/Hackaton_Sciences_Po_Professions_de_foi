@@ -28,7 +28,7 @@ Tests du prompt finale sur différents LLM et différents modèles de LLM afin d
 La sélection a été faite en fonction de la performance affichée et de la rapidité du modèle. 
 
 Pour ces tests, nous avons constitué un fichier-échantillon csv composé de 5 professions de foi. Nous avons ensuite comparé les résultats obtenus avec les professions de foi
-en prenant soin de noter quelleq informations manquaient, les éventuelles hallucinations etc. 
+en prenant soin de noter quelles informations manquaient, les éventuelles hallucinations etc. 
 
 Liste des mpodèles proposés mis à disposition par : 
 - Mistral : https://docs.mistral.ai/getting-started/models
