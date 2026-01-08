@@ -45,6 +45,6 @@ Test sur le fichier-échantillon --> taux de réussite estimé : 92%.
 
 ## Partie 4 - Batchs
 
-Réalisation de batchs afin de réaliser le test sur les échantillons finaux. 
+Réalisation de batchs afin de lancer les tests des modèles choisis sur les échantillons finaux. 
 
 Pour en savoir plus rendez-vous dans le fichier Batch.
