@@ -43,4 +43,7 @@ Test sur le fichier-échantillon --> taux de réussite estimé : 92%.
 
 
 
-## Évaluation
+## Partie 4 - Résulats des tests 
+
+
+## Partie 5 - Batchs
