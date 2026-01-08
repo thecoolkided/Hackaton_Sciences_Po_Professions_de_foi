@@ -17,7 +17,7 @@ Les fournisseurs de LLM ont mis à disposition des guides  :
 - OpenAI : https://colab.research.google.com/github/EnkrateiaLucca/oreilly_live_training_llm_apps/blob/main/notebooks/1.0-Intro-ChatGPT-API-prompt-basics.ipynb
 
   
-⚠️ Il faut nécessairement une clé API 
+⚠️ Il faut nécessairement une clé API.
 
 La version finale du prompt est disponible sur le GitHub sous le nom : promptSciencesPo. 
 
