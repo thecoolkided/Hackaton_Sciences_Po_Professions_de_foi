@@ -1,7 +1,7 @@
 # Hackaton_Sciences_Po_Professions_de_foi
 Repo du projet professions de foi de Sciences Po
 
-## Partie 1 - Extraction de textes à partir des pdfs. 
+## Partie 1 - Extraction de textes à partir des pdfs
 
 
 
