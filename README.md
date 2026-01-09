@@ -24,6 +24,7 @@ Pour les documents dont le texte fait partie de l'image et ne peut être copié 
 Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/SP_Mistral_OCR.ipynb
 
 Exemples: 
+
 Methode 1 
 | filename                               | page_1 | page_2 |
 |----------------------------------------|--------|--------|
