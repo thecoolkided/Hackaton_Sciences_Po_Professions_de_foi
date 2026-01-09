@@ -6,6 +6,7 @@ Repo du projet professions de foi de Sciences Po. Détails des méthodes utilis�
 L'ensemble des données comprend **19 194 documents** au format PDF.
 
 Les documents _falc ont été supprimés en premier lieu de la base de données initiale, car ces fichiers sont complémentaires aux professions de foi déjà existantes et ne font que doubler les informations. Après cette procédure, la base de données a été réduite à **14 631 documents**.
+
 Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/Traitement%20des%20donn%C3%A9es.ipynb
 
 **Methode 1**
