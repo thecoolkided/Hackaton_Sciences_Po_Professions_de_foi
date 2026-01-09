@@ -93,7 +93,8 @@ Methode 2 : OCR Mistral
 
 | model              | cell_accuracy |
 |--------------------|---------------|
-| Mistral_Large_3    | 0.974432      |
-| ChatBot_ChatGPT    | 0.400568      |
-| MiniMistral        | 0.323864      |
+| Mistral_Large_3    | 0.973607      |
+| ChatBot_ChatGPT    | 0.413490      |
+| MiniMistral        | 0.346041      |
+
 
