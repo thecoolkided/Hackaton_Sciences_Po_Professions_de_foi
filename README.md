@@ -80,3 +80,20 @@ Test sur le fichier-échantillon --> taux de réussite estimé : 92%.
 Réalisation de batchs afin de lancer les tests des modèles choisis sur les échantillons finaux. 
 
 Pour en savoir plus rendez-vous dans le fichier Batch.
+
+#### Métriques : 
+
+Methode 1 : OCR PDF
+
+| model           | cell_accuracy |
+|-----------------|---------------|
+| Mistral_Large_3 | 0.897361      |
+
+Methode 2 : OCR Mistral
+
+| model              | cell_accuracy |
+|--------------------|---------------|
+| Mistral_Large_3    | 0.974432      |
+| ChatBot_ChatGPT    | 0.400568      |
+| MiniMistral        | 0.323864      |
+
