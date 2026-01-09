@@ -6,6 +6,7 @@ Repo du projet professions de foi de Sciences Po. Détails des méthodes utilis�
 L'ensemble des données comprend **19 194 documents** au format PDF.
 
 Les documents _falc ont été supprimés en premier lieu de la base de données initiale, car ces fichiers sont complémentaires aux professions de foi déjà existantes et ne font que doubler les informations. Après cette procédure, la base de données a été réduite à **14 631 documents**.
+Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/Traitement%20des%20donn%C3%A9es.ipynb
 
 **Methode 1**
 
@@ -13,13 +14,13 @@ La bibliothèque **PyMuPDF (fitz)** est utilisée pour l’extraction du texte �
  
 Un résultat positif a été obtenu pour la plupart des fichiers PDF. **3085 fichiers** sur 14 631 se sont avérés être des fichiers PDF dont il était impossible d'extraire le texte, car celui-ci faisait partie intégrante de l'image. Pour ces fichiers, une méthode supplémentaire d'extraction de texte a été utilisée.
 
-Code : 
+Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/SP_pymupython_OCR.ipynb
 
 **Methodé 2**
 
 Pour les documents dont le texte fait partie de l'image et ne peut être copié de manière classique à l'aide des bibliothèques simples de traitement des documents PDF, nous avons utilisé la technologie de reconnaissance optique de caractères (OCR) basée sur le modèle Mistral OCR. Plus précisément, nous avons utilisé le modèle **« mistral-ocr-latest »**. Cette méthode est plus lente et payante, mais elle donne un résultat net.
 
-Code : 
+Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/SP_Mistral_OCR.ipynb
 
 Exemples: 
 Methode 1 
