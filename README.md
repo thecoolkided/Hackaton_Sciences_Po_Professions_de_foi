@@ -1,8 +1,13 @@
 # Hackaton_Ecole_nationale_des_chartes_Projet_Sciences_Po_Professions_de_foi
-Repo du projet professions de foi proposé par Sciences Po pour le hackaton du master humanités numériques organisé par l'Ecole nationale des chartes en janvier 2026
+
+Repo du projet "Quand Archelec rencontre l'IA" proposé par Sciences Po pour le hackaton du master humanités numériques organisé par l'Ecole nationale des chartes en janvier 2026. 
+
+Objectif : Génération automatique de métadonnées à partir de professions de foi électorales françaises de 2017 à 2024.
 
 
 <img width="1885" height="299" alt="logo-chartes-psl-coul" src="https://github.com/user-attachments/assets/9788ad7c-99af-4da7-8e50-dca1e762177c" />
+
+
 <img width="770" height="306" alt="capture-d-ecran-2026-01-05-110708" src="https://github.com/user-attachments/assets/078ae061-7b80-4bba-8fe5-3ddee1f0aa0a" />
 
 
