@@ -1,13 +1,6 @@
 # Hackaton_Ecole_nationale_des_chartes_Projet_Sciences_Po_Professions_de_foi
 Repo du projet professions de foi proposé par Sciences Po pour le hackaton du master humanités numériques de l'Ecole nationale des chartes.
 
-<img width="815" height="162" alt="Capture d’écran 2026-01-11 à 17 38 55" src="https://github.com/user-attachments/assets/79824159-9c95-493e-a422-10bd13af7083" />
-
-![Logo_SciencesPo](https://github.com/user-attachments/assets/9ccb0b59-46a1-4ab5-9951-141f93b09757)
-<img src="logo-chartes.png" height="100px">
-<img src="logo-sciencespo.png" height="100px">
-
-
 
 ## Partie 1 - Extraction de textes à partir des pdfs
 
