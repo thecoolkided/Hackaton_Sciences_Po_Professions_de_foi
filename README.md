@@ -55,9 +55,9 @@ Les fournisseurs de LLM ont mis à disposition des guides  :
 La version finale du prompt est disponible sur le GitHub : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/promptSciencesPo
 
 
-## Partie 3 - Test des prompts sur différents modèles 
+## Partie 3 - Test du prompt sur différents modèles 
 
-Tests du prompt finale sur différents modèles de différents LLM afin de déterminer celui qui serait le plus à même de répondre à nos besoins.
+Test du prompt finale sur différents modèles de différents LLM afin de déterminer celui qui serait le plus à même de répondre à nos besoins.
 La sélection a été faite en fonction de la performance affichée et de la rapidité du modèle. 
 
 Pour ces tests, nous avons constitué un fichier-échantillon csv composé de 5 professions de foi. Nous avons ensuite comparé les résultats obtenus avec les professions de foi
