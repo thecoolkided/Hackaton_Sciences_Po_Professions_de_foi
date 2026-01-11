@@ -77,7 +77,8 @@ Liste des modèles mis à disposition par :
 | Ministral 3 3B      
 
 
-Fichier-échantillon : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Tests/fichier_echantillon_test.csv
+Fichier-échantillon : 
+https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Tests/fichier_echantillon_test.csv
 
 Résultats des tests : 
 https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Tests
