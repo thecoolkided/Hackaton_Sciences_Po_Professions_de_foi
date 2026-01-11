@@ -75,11 +75,26 @@ Test sur le fichier-échantillon --> taux de réussite estimé : 92%.
 
 
 
-## Partie 4 - Batchs
+## Partie 4 - Tests finaux
+
+### Batchs
 
 Réalisation de batchs afin de lancer les tests des modèles choisis sur les échantillons finaux. 
 
 Pour en savoir plus : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Batch
+
+### Tests
+
+Les tests finaux ont étés réalisés en suivant le même script (code).
+
+Pour en savoir plus : 
+
+
+## Partie 5 - Évaluation des résultats
+
+Pour évaluer les résulats des tests nous les avons soumis à une évaluation.
+
+Pour en savoir plus : 
 
 #### Métriques : 
 
