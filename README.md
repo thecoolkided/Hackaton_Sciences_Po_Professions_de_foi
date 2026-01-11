@@ -89,7 +89,7 @@ Une fois le prompt écrit, nous avons élargi les modèles sur lesquels le teste
  | Mistral            | OpenAI |
 |-----------------    |---------------|
 | Mistral Large 3     | GPT-5 nano    |
-| Magistral Small 1.2 | ChatGPT       |
+| Magistral Small 1.2 | Chatbot ChatGPT|
 | Ministral 3 3B      
 
 Liste des modèles mis à disposition par : 
@@ -122,14 +122,14 @@ Methode 1 : OCR PDF
 
 | model           | cell_accuracy |
 |-----------------|---------------|
-| Mistral_Large_3 | 0.897361      |
+| Mistral Large 3 | 0.897361      |
 
 Methode 2 : OCR Mistral
 
 | model              | cell_accuracy |
 |--------------------|---------------|
-| Mistral_Large_3    | 0.973607      |
-| ChatBot_ChatGPT    | 0.413490      |
-| MiniMistral        | 0.346041      |
+| Mistral Large 3    | 0.973607      |
+| ChatBot ChatGPT    | 0.413490      |
+| Ministral 3B       | 0.346041      |
 
 
