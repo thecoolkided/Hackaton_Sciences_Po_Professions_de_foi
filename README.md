@@ -76,7 +76,7 @@ Pour ce faire, nous avons constitué un fichier-échantillon csv composé de 5 p
 Fichier-échantillon : 
 
 
-Résultats du test de la version finale du prompt : 
+Résultats du test de la version finale du prompt : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Test_prompt/Resultats_prompt_final_mistral_large_3.csv
 
 
 
