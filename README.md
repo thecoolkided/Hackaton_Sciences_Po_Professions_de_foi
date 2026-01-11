@@ -67,11 +67,13 @@ Les fournisseurs de LLM ont mis à disposition des guides  :
 La version finale du prompt est disponible sur le GitHub : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/promptSciencesPo
 
 
-## 2.2 - Test du prompt sur Mistral Large 3
+## 2.2 - Test du prompt sur Mistral Large 3 et Mistral 3 3B
 
 Mistral Large 3 est le modèle le plus performant proposé par Mistral, raison pour laquelle nous l'avons choisi pour soumettre les différentes versions de notre prompt. Cela nous a également permis de tester sa fiabilité.
 
-Pour ce faire, nous avons constitué un fichier-échantillon csv composé de 5 professions de foi. Nous avons ensuite comparé les résultats obtenus avec les professions de foi en prenant soin de noter quelles informations manquaient, les éventuelles hallucinations etc. 
+Nous voulions également observer ce qu'un modèle moins puissant mais présenté comme plus rapide était capable de faire. C'est pourquoi nous avons choisi Mistral 3 3B également proposé par Mistral.
+
+Pour faire nos tests, nous avons constitué un fichier-échantillon csv composé de 5 professions de foi. Nous avons ensuite comparé les résultats obtenus avec les professions de foi en prenant soin de noter quelles informations manquaient, les éventuelles hallucinations etc. 
 
 Fichier-échantillon : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Test_prompt/fichier_echantillon_5_test.csv
 
@@ -130,6 +132,6 @@ Methode 2 : OCR Mistral
 |--------------------|---------------|
 | Mistral Large 3    | 0.973607      |
 | ChatBot ChatGPT    | 0.413490      |
-| Ministral 3B       | 0.346041      |
+| Ministral 3 3B       | 0.346041      |
 
 
