@@ -63,14 +63,14 @@ La sélection a été faite en fonction de la performance affichée et de la rap
 Pour ces tests, nous avons constitué un fichier-échantillon csv composé de 5 professions de foi. Nous avons ensuite comparé les résultats obtenus avec les professions de foi
 en prenant soin de noter quelles informations manquaient, les éventuelles hallucinations etc. 
 
-Liste des mpodèles proposés mis à disposition par : 
+Liste des modèles proposés mis à disposition par : 
 - Mistral : https://docs.mistral.ai/getting-started/models
 - OpenAI : https://platform.openai.com/docs/models
 
 
 ### Tableau des modèles testés 
 
- | Mistral            | Autre |
+ | Mistral            | OpenAI |
 |-----------------    |---------------|
 | Mistral Large 3     | GPT-5 nano    |
 | Magistral Small 1.2 | ChatGPT       |
