@@ -76,7 +76,10 @@ Liste des modèles mis à disposition par :
 | Magistral Small 1.2 | ChatGPT       |
 | Ministral 3 3B      
 
-Les résultats des tests sont disponibles dans le fichier Tests : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Tests
+
+Fichier-échantillon : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Tests/fichier_echantillon_test.csv
+
+Résultats des tests : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Tests
 
 
 ## Partie 4 - Tests finaux
