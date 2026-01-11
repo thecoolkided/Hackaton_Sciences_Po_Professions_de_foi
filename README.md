@@ -74,7 +74,7 @@ Liste des mpodèles proposés mis à disposition par :
 |-----------------    |---------------|
 | Mistral_Large_3     | GPT-5_nano    |
 | Magistral_Small_1.2 | ChatGPT       |
-| Ministral_3_3B      |               |
+| Ministral_3_3B      
 
 Les résultats des tests sont disponibles dans le fichier Tests : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Tests
 
