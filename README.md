@@ -40,7 +40,9 @@ Methode 2
 | LG17-1-1-BLATRIX-CONTAT-2-tour1-profession_foi.pdf | Florence BLATRIX-CONTAT — présentation personnelle et parcours politique... | Programme législatif et engagements (gauche, justice sociale, écologie, services publics)... |
 
 
-## Partie 2 - Écriture du prompt
+## Partie 2 - Le prompt
+
+### 2.1 - Écriture du prompt
 
 Nous avons réalisé plusieur écritures de prompts en essayant à chaque fois d'en améliorer la qualité. En effet, un prompt qualitatif
 et détaillé permet d'obtenir de meilleurs résultats. 
@@ -55,20 +57,24 @@ Les fournisseurs de LLM ont mis à disposition des guides  :
 La version finale du prompt est disponible sur le GitHub : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/promptSciencesPo
 
 
-## Partie 3 - Test du prompt sur différents modèles 
+## 2.2 - Test des prompts sur Mistral Large 3
 
-Test du prompt final sur différents modèles de différents LLM afin de déterminer celui qui serait le plus à même de répondre à nos besoins.
-La sélection a été faite en fonction de la performance affichée et de la rapidité du modèle. 
+Mistral Large 3 est le modèle le plus performant proposé par Mistral, raison pour laquelle nous l'avons choisi pour soumettre les différentes versions de notre prompt. Cela nous a également permis de tester sa fiabilité.
 
-Pour ces tests, nous avons constitué un fichier-échantillon csv composé de 5 professions de foi. Nous avons ensuite comparé les résultats obtenus avec les professions de foi
-en prenant soin de noter quelles informations manquaient, les éventuelles hallucinations etc. 
+Afin d'effectuer les différents tests, nous avons constitué un fichier-échantillon csv composé de 5 professions de foi. Nous avons ensuite comparé les résultats obtenus avec les professions de foi en prenant soin de noter quelles informations manquaient, les éventuelles hallucinations etc. 
 
-Liste des modèles mis à disposition par : 
-- Mistral : https://docs.mistral.ai/getting-started/models
-- OpenAI : https://platform.openai.com/docs/models
+Fichier-échantillon : 
+https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Tests/fichier_echantillon_test.csv
+
+Résultat du dernier test : 
+https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Tests
 
 
-### Tableau des modèles testés 
+## Partie 3 - Tests finaux
+
+Une fois le prompt écrit, nous avons élargi les modèles sur lesquels le tester.
+
+**Tableau des modèles sélectionnés** 
 
  | Mistral            | OpenAI |
 |-----------------    |---------------|
@@ -76,20 +82,15 @@ Liste des modèles mis à disposition par :
 | Magistral Small 1.2 | ChatGPT       |
 | Ministral 3 3B      
 
+Liste des modèles mis à disposition par : 
+- Mistral : https://docs.mistral.ai/getting-started/models
+- OpenAI : https://platform.openai.com/docs/models
 
-Fichier-échantillon : 
-https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Tests/fichier_echantillon_test.csv
-
-Résultats des tests : 
-https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Tests
-
-
-## Partie 4 - Tests finaux
-
+  
 ### Étape 1 - Batchs
 
-Réalisation de batchs afin de lancer les tests des modèles choisis sur les échantillons finaux. 
-
+Afin de juger au mieux la performance de ces modèles, nous avons décidé de constituer un échantillon plus conséquent. Pour ce faire nous avons utilisé le procédé batch.
+ 
 Code : 
 https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Batch
 
