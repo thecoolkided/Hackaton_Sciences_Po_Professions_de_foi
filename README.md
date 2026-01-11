@@ -64,10 +64,10 @@ Mistral Large 3 est le modèle le plus performant proposé par Mistral, raison p
 Afin d'effectuer les différents tests, nous avons constitué un fichier-échantillon csv composé de 5 professions de foi. Nous avons ensuite comparé les résultats obtenus avec les professions de foi en prenant soin de noter quelles informations manquaient, les éventuelles hallucinations etc. 
 
 Fichier-échantillon : 
-https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Tests/fichier_echantillon_test.csv
+
 
 Résultat du dernier test : 
-https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Tests
+
 
 
 ## Partie 3 - Tests finaux
