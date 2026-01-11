@@ -1,4 +1,4 @@
-# Hackaton_Ecole_nationale_des_chartes_Projet_Sciences_Po_Professions_de_foi
+# Hackaton_Ecole_nationale_des_chartes_Projet_SciencesPo
 
 Repo du projet "Quand Archelec rencontre l'IA" proposé par Sciences Po pour le hackaton du master humanités numériques organisé par l'Ecole nationale des chartes en janvier 2026. 
 
