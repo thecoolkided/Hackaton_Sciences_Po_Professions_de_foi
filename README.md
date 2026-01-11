@@ -31,7 +31,7 @@ Methode 1
 | LG17-1-1-BONNOT-10-tour1-profession_foi.pdf | Vincent GUERIN<br>Gilbert BONNOT<br>... | Ce que nous voulons<br>... |
 
 
-Methode2 
+Methode 2 
 | filename | page_1 | page_2 |
 |---------|--------|--------|
 | LG17-1-1-BLATRIX-CONTAT-2-tour1-profession_foi.pdf | Florence BLATRIX-CONTAT — présentation personnelle et parcours politique... | Programme législatif et engagements (gauche, justice sociale, écologie, services publics)... |
