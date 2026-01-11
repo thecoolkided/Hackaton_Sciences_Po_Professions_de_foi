@@ -49,7 +49,9 @@ Les fournisseurs de LLM ont mis à disposition des guides  :
   
 ⚠️ Il faut nécessairement une clé API.
 
-La version finale du prompt est disponible sur le GitHub : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/promptSciencesPo
+La version finale du prompt est disponible sur le GitHub. 
+
+Pour en savoir plus : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/promptSciencesPo
 
 
 ## Partie 3 - Test des prompts sur différents modèles 
@@ -94,7 +96,7 @@ Pour en savoir plus : https://github.com/thecoolkided/Hackaton_Sciences_Po_Profe
 
 Pour évaluer les résulats des tests nous les avons soumis à une évaluation.
 
-Pour en savoir plus : 
+Pour en savoir plus : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/code_evaluation_resultats_LLM
 
 #### Métriques : 
 
