@@ -87,7 +87,7 @@ Pour en savoir plus : https://github.com/thecoolkided/Hackaton_Sciences_Po_Profe
 
 Les tests finaux ont étés réalisés en suivant le même script (code).
 
-Pour en savoir plus : 
+Pour en savoir plus : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/code_traitement_professions_de_foi_par_categorisation.ipynb
 
 
 ## Partie 5 - Évaluation des résultats
