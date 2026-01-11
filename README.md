@@ -7,7 +7,8 @@ L'ensemble des données comprend **19 194 documents** au format PDF.
 
 Les documents _falc ont été supprimés en premier lieu de la base de données initiale, car ces fichiers sont complémentaires aux professions de foi déjà existantes et ne font que doubler les informations. Après cette procédure, la base de données a été réduite à **14 631 documents**.
 
-Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/Traitement%20des%20donn%C3%A9es.ipynb
+Code : 
+https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/Traitement%20des%20donn%C3%A9es.ipynb
 
 **Methode 1**
 
@@ -15,13 +16,15 @@ La bibliothèque **PyMuPDF (fitz)** est utilisée pour l’extraction du texte �
  
 Un résultat positif a été obtenu pour la plupart des fichiers PDF. **3085 fichiers** sur 14 631 se sont avérés être des fichiers PDF dont il était impossible d'extraire le texte, car celui-ci faisait partie intégrante de l'image. Pour ces fichiers, une méthode supplémentaire d'extraction de texte a été utilisée.
 
-Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/SP_pymupython_OCR.ipynb
+Code : 
+https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/SP_pymupython_OCR.ipynb
 
 **Methode  2**
 
 Pour les documents dont le texte fait partie de l'image et ne peut être copié de manière classique à l'aide des bibliothèques simples de traitement des documents PDF, nous avons utilisé la technologie de reconnaissance optique de caractères (OCR) basée sur le modèle Mistral OCR. Plus précisément, nous avons utilisé le modèle **« mistral-ocr-latest »**. Cette méthode est plus lente et payante, mais elle donne un résultat net.
 
-Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/SP_Mistral_OCR.ipynb
+Code : 
+https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/SP_Mistral_OCR.ipynb
 
 Exemples: 
 
@@ -49,9 +52,7 @@ Les fournisseurs de LLM ont mis à disposition des guides  :
   
 ⚠️ Il faut nécessairement une clé API.
 
-La version finale du prompt est disponible sur le GitHub. 
-
-Pour en savoir plus : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/promptSciencesPo
+La version finale du prompt est disponible sur le GitHub : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/promptSciencesPo
 
 
 ## Partie 3 - Test des prompts sur différents modèles 
@@ -83,20 +84,22 @@ Test sur le fichier-échantillon --> taux de réussite estimé : 92%.
 
 Réalisation de batchs afin de lancer les tests des modèles choisis sur les échantillons finaux. 
 
-Pour en savoir plus : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Batch
+Code : 
+https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Batch
 
 ### Tests
 
 Les tests finaux ont étés réalisés en suivant le même script (code).
 
-Pour en savoir plus : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/code_traitement_professions_de_foi_par_categorisation.ipynb
+Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/code_traitement_professions_de_foi_par_categorisation.ipynb
 
 
 ## Partie 5 - Évaluation des résultats
 
 Pour évaluer les résulats des tests nous les avons soumis à une évaluation.
 
-Pour en savoir plus : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/code_evaluation_resultats_LLM
+Code : 
+https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/code_evaluation_resultats_LLM
 
 #### Métriques : 
 
