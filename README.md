@@ -102,8 +102,6 @@ Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/b
 
 ## Partie 5 - Évaluation des résultats
 
-Pour évaluer les résulats des tests nous les avons soumis à une évaluation.
-
 Code : 
 https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/code_evaluation_resultats_LLM
 
