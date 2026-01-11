@@ -40,7 +40,7 @@ Methode 2
 | LG17-1-1-BLATRIX-CONTAT-2-tour1-profession_foi.pdf | Florence BLATRIX-CONTAT — présentation personnelle et parcours politique... | Programme législatif et engagements (gauche, justice sociale, écologie, services publics)... |
 
 
-## Partie 2 - Écriture de prompts 
+## Partie 2 - Écriture du prompt
 
 Nous avons réalisé plusieur écritures de prompts en essayant à chaque fois d'en améliorer la qualité. En effet, un prompt qualitatif
 et détaillé permet d'obtenir de meilleurs résultats. 
@@ -57,7 +57,7 @@ La version finale du prompt est disponible sur le GitHub : https://github.com/th
 
 ## Partie 3 - Test du prompt sur différents modèles 
 
-Test du prompt finale sur différents modèles de différents LLM afin de déterminer celui qui serait le plus à même de répondre à nos besoins.
+Test du prompt final sur différents modèles de différents LLM afin de déterminer celui qui serait le plus à même de répondre à nos besoins.
 La sélection a été faite en fonction de la performance affichée et de la rapidité du modèle. 
 
 Pour ces tests, nous avons constitué un fichier-échantillon csv composé de 5 professions de foi. Nous avons ensuite comparé les résultats obtenus avec les professions de foi
