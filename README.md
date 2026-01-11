@@ -1,7 +1,7 @@
 # Hackaton_Ecole_nationale_des_chartes_Projet_Sciences_Po_Professions_de_foi
 Repo du projet professions de foi proposé par Sciences Po pour le hackaton du master humanités numériques de l'Ecole nationale des chartes.
 
-<img width="1885" height="299" alt="logo-chartes-psl-coul" src="https://github.com/user-attachments/assets/376d75d0-a3f8-43a7-9876-551a29981e09" />
+<img width="1885" height="299" alt="logo-chartes-psl-coul" src="https://github.com/user-attachments/assets/b2e17e55-0beb-4737-b438-fde71615c4d6" />
 
 ![Logo_SciencesPo](https://github.com/user-attachments/assets/9ccb0b59-46a1-4ab5-9951-141f93b09757)
 
