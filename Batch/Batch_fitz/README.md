@@ -1,1 +1,1 @@
-Batch à partir extraction fitz.
+Batchs extraction fitz.
