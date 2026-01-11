@@ -67,15 +67,16 @@ Liste des mpodèles proposés mis à disposition par :
 - Mistral : https://docs.mistral.ai/getting-started/models
 - OpenAI : https://platform.openai.com/docs/models
 
-Les résultats des tests sont disponibles dans le fichier tests
 
-### Modèle 1.1 - Mistral Large 3 de Mistral 
+### Tableau des modèles testés 
 
-Mistral Large 3 est le dernier gros modèle généraliste de chez Mistral. Nous avons choisi de l'utiliser parce qu'il est très performant malgré sa relative lenteur. 
+ | Mistral            | Autre |
+|-----------------    |---------------|
+| Mistral_Large_3     | GPT-5_nano    |
+| Magistral_Small_1.2 | ChatGPT       |
+| Ministral_3_3B      |               |
 
-Test sur le fichier-échantillon --> taux de réussite estimé : 92%. 
-
-
+Les résultats des tests sont disponibles dans le fichier Tests : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Tests
 
 
 ## Partie 4 - Tests finaux
