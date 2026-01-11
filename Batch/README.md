@@ -5,5 +5,6 @@ Ces petits lots sont ensuite traités un par un, ce qui rend le processus plus f
 
 Deux dossiers contiennent les batchs effectués sur les résultats des deux OCR Mistral et fitz. Un bacth contient 50 professions de fois différentes. 
 
-**Exemple**
+**Exemple :**
+
 batch_test_mistral_O = 50 professions de fois.
