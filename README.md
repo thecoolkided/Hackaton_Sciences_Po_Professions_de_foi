@@ -79,7 +79,7 @@ Test sur le fichier-échantillon --> taux de réussite estimé : 92%.
 
 Réalisation de batchs afin de lancer les tests des modèles choisis sur les échantillons finaux. 
 
-Pour en savoir plus rendez-vous dans le fichier Batch.
+Pour en savoir plus : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Batch
 
 #### Métriques : 
 
