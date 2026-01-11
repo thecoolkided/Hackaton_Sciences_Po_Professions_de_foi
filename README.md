@@ -57,7 +57,7 @@ La version finale du prompt est disponible sur le GitHub : https://github.com/th
 
 ## Partie 3 - Test des prompts sur différents modèles 
 
-Tests du prompt finale sur différents modèles de différents LLM de déterminer celui qui serait le plus à même de répondre à nos besoins.
+Tests du prompt finale sur différents modèles de différents LLM afin de déterminer celui qui serait le plus à même de répondre à nos besoins.
 La sélection a été faite en fonction de la performance affichée et de la rapidité du modèle. 
 
 Pour ces tests, nous avons constitué un fichier-échantillon csv composé de 5 professions de foi. Nous avons ensuite comparé les résultats obtenus avec les professions de foi
