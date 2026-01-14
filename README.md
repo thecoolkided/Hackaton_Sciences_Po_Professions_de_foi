@@ -64,8 +64,8 @@ Les fournisseurs de LLM ont mis à disposition des guides  :
   
 ⚠️ Il faut nécessairement une clé API.
 
-La version finale du prompt est disponible sur le GitHub : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/promptSciencesPo
-
+La version finale du prompt est disponible sur le GitHub : 
+https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Tests_prompt/prompt_final_SciencesPo
 
 ## 2.2 - Test du prompt sur Mistral Large 3 et Mistral 3 3B
 
