@@ -4,7 +4,7 @@ Les résultats du test ont fait l'objet d'annotations colorées. Or, les fichier
 
 Ainsi les trois sous-dossiers contiennent tous la même chose, seul le format change.
 
-# Exempple : sous-dossier ML3.pdf 
+### Exemple : sous-dossier ML3.pdf 
  Comme son nom l'indique, ce sous-dossier contient les résultats du test du prompt final sur Mistral Large 3 au format .pdf. 
  
  On y trouvera deux fichiers :
