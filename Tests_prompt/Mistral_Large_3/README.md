@@ -1,8 +1,8 @@
 ## Organisations du dossier 
 
-Les résultats du test du prompt final sur Mistral Large 3 ont fait l'objet d'annotations colorées. Or, les fichiers CSV ne peuvent contenir du texte formaté. La lisibilité des données étant essentielle, nous avons donc choisi de mettre à disposition les résultats sous trois formats différents .pdf, .numbers et .xlsx(Excel). De cette façon, la conversion au format .csv est possible. 
+Les résultats du test du prompt final sur Mistral Large 3 ont fait l'objet d'annotations colorées. Or, les fichiers CSV ne peuvent contenir du texte formaté. La lisibilité des données étant essentielle, nous avons donc choisi de mettre à disposition les résultats sous trois formats différents .pdf, .numbers et .xlsx(Excel). De cette façon, la conversion au format .csv reste possible si besoin. 
 
-Ainsi les trois sous-dossiers contiennent tous la même chose, seul le format change.
+Ainsi, les trois sous-dossiers contiennent tous la même chose, seul le format change.
 
 ### Exemple : sous-dossier ML3.pdf 
  Comme son nom l'indique, ce sous-dossier contient les résultats du test du prompt final sur Mistral Large 3 au format .pdf. 
