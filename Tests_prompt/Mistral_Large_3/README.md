@@ -11,6 +11,11 @@ Ainsi, les trois sous-dossiers contiennent tous la même chose, seul le format c
  - Le fichier _raw contient les résultats non-corrigés (erreurs affichées en rouge).
  - Le fichier _clean contient les résultats corrigés (corrections affichées en vert).
 
-⚠️ Les données affichées bleues sont le résultats de "collage d'information". 
+⚠️ Les données affichées bleues sont le résultats de "collage d'information". En voici un exemple : 
+Deux professions de foi même candidat pour deux tours : 
+- Dans profession de foi du tour 1 : âge pas mentionné. 
+- Dans profession de foi du tour 2 : âge mentionné. 
+LLM rempli la catégorie âge avec le bon âge pour les deux professions de foi = collage d'information.
 
-    Pour en savoir plus : 
+
+
