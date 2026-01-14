@@ -16,6 +16,3 @@ Deux professions de foi même candidat pour deux tours :
 - Dans profession de foi du tour 1 : âge pas mentionné. 
 - Dans profession de foi du tour 2 : âge mentionné. 
 LLM rempli la catégorie âge avec le bon âge pour les deux professions de foi = collage d'information.
-
-
-    Pour en savoir plus : 
