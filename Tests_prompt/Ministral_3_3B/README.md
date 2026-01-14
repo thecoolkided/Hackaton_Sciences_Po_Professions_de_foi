@@ -1,10 +1,16 @@
-Résulats prompt final avec Ministral 3 3B.
+## Organisations du dossier 
 
-## 🚨 A Noter 
+Les résultats du test du prompt final sur Ministral 3 3B ont fait l'objet d'annotations colorées. Or, les fichiers CSV ne peuvent contenir du texte formaté. La lisibilité des données étant essentielle, nous avons donc choisi de mettre à disposition les résultats sous trois formats différents .pdf, .numbers et .xlsx(Excel). De cette façon, la conversion au format .csv reste possible si besoin. 
 
-Ce qui est affiché n'est pas exactement ce qui est contenu dans le fichier csv obtenu après le test final du prompt sur Ministral 3 3B.
-A la fin du tableau, deux colonnes supplémentaires ont été créées. Ce sont deux erreurs que le modèle a fait. 
+Ainsi, les trois sous-dossiers contiennent tous la même chose, seul le format change.
 
-Ces colonnes ne sont pas remplies en intégralité dans le fichier originel, ce qui pose un problème d'affichage sur GitHub. Nous avons donc intitulé ces colonnes erreur1 et erreur2 et rempli les cases vides par "erreur". 
+### Exemple : sous-dossier Mini3.pdf 
+ Comme son nom l'indique, ce sous-dossier contient les résultats du test du prompt final sur Mini3 au format .pdf. 
+ 
+ On y trouvera deux fichiers :
+ - Le fichier _raw contient les résultats non-corrigés (erreurs affichés en rouge).
+ - Le fichier _clean contient les résultats corrigés (corrections affichées en vert).
 
-Pour ce qui est du reste, les données sont affichées telles quelles. 
+⚠️ Les données affichées bleues sont le résultats de "collage d'information". 
+
+    Pour en savoir plus : 
