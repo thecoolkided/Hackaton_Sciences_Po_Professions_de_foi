@@ -67,7 +67,7 @@ Les fournisseurs de LLM ont mis à disposition des guides  :
 La version finale du prompt est disponible sur le GitHub : 
 https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Tests_prompt/prompt_final_SciencesPo
 
-## 2.2 - Test du prompt sur Mistral Large 3 et Mistral 3 3B
+### 2.2 - Test du prompt sur Mistral Large 3 et Mistral 3 3B
 
 Mistral Large 3 est le modèle généraliste le plus performant proposé par Mistral, raison pour laquelle nous l'avons choisi pour soumettre les différentes versions de notre prompt. Cela nous a également permis de tester sa fiabilité.
 
