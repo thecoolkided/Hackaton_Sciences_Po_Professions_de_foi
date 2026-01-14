@@ -8,7 +8,7 @@ Ainsi, les trois sous-dossiers contiennent tous la même chose, seul le format c
  Comme son nom l'indique, ce sous-dossier contient les résultats du test du prompt final sur Mistral Large 3 au format .pdf. 
  
  On y trouvera deux fichiers :
- - Le fichier _raw contient les résultats non-corrigés (erreurs affichés en rouge).
+ - Le fichier _raw contient les résultats non-corrigés (erreurs affichées en rouge).
  - Le fichier _clean contient les résultats corrigés (corrections affichées en vert).
 
 ⚠️ Les données affichées bleues sont le résultats de "collage d'information". 
