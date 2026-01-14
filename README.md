@@ -78,7 +78,8 @@ Pour faire nos tests, nous avons constitué un fichier-échantillon csv composé
 Fichier-échantillon : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Test_prompt/fichier_echantillon_5_test.csv
 
 
-Résultats du test de la version finale du prompt : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Test_prompt/Resultats_prompt_final_mistral_large_3.csv
+Résultats du test de la version finale du prompt : 
+https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Tests_prompt
 
 
 
