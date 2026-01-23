@@ -109,7 +109,7 @@ https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/mai
 
 ### Étape 2 - Tests finaux
 
-Les tests finaux ont étés réalisés en suivant le même le prompt.
+Les tests finaux ont étés réalisés en suivant le même code.
 
 Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Tests_prompt
 
@@ -146,7 +146,9 @@ Nous recommandons de laisser de côté ChatGPT. Malgrés des performances correc
 
 Bien que sélectionné, nous n'avons pu obtenir de résultats pour GPT5-nano, raison pour laquelle il ne figure pas dans les tableaux récapitulatifs.
 
-Pour une mise à l'échelle efficace nous recommendons de traiter plusieurs batchs à la fois de manière à obtenir des résultats plus rapidement. Il en est de même avec le correcteur de CSV. Pour ce faire, il faudra modifier le prompt ainsi que le code du correcteur.
+Enfin, pour ce qui est de la mise à l'échelle, deux options sont possibles. 
+1. Mettre à l'échelle batch par batch. Le processus sera long mais il aura le mérite d'avoir été testé et approuvé.
+2. Mettre à l'échelle en traitant plusieurs batchs en même temps. Le processsus sera plus rapide mais il cela requerra une modification du code_test_batch_mistralipynb ainsi que du correcteur de CSV. 
 
 
 
