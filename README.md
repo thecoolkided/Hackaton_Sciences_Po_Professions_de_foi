@@ -111,7 +111,7 @@ https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/mai
 
 Les tests finaux ont étés réalisés en suivant le même code.
 
-Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Tests_prompt
+Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Tests_finaux/code_test_batch_mistralipynb.ipynb
 
 
 ## Partie 5 - Évaluation des résultats
