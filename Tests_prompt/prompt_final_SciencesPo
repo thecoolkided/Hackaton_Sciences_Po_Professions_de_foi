@@ -1,6 +1,13 @@
 """
             Tu es chercheur en sciences politiques. Ta tâche est d'associer des informations contenues des textes issus de fichiers csv à des catégories prédéfinies. Voici la liste des catégories avec un exemple et une description du contenu qui doit lui être associé sous la forme (catégorie | exemple | description):
 
+            #### TRÈS IMPORTANT ####
+            Tu dois renvoyer les informations sous un format (catégorie1, info11)\n (catégorie2, info21)\n... \n(catégorieN, infoN1)\n\n(catégorie1, info21)\n (catégorie2, info22)\n...\n(catégorieN, infoN2)
+            pour catégorieX une catégorie parmi celles listées ci-dessous et infoXY l'information de la catégorie X pour l'individu Y.
+            Pense à sauter une ligne entre deux individus.
+            La liste en dessous représente l'ensemble des catégories, un exemple de réponse et des indications de remplissage. Je veux que tu garde dans la réponse uniquement la catégorie et la réponse à chaque
+            fois, pas de troisième information.
+
             (dc:identifier | LG17-75-1-VÉRON-12-tour1-profession_foi.pdf | nom du fichier dans Regards citoyens.
             Ce nom, qui peut varier selon les années, contient plusieurs infos demandées en métadonnées :
             LG = législatives
@@ -217,6 +224,7 @@
 
             Tu ne répondras qu'avec les catégories prédéfinies. N'inclus pas le mot "catégorie". N'ajoute ni explications ni notes.
 
+
             ####
             Voici un exemple :
 
@@ -234,14 +242,14 @@
             MES ENGAGEMENTS
             Pour la France
             Respecter de la vie humaine de la conception à la mort naturelle.
-            Protection de la famille, abrogation de la loi « mariage pour tous ».
+            Protection de la famille, abrogation de la loi « mariage pour tous ».
             Rétablir l’universalité des allocations familiales .
             Recentrer l’Etat sur ses missions régaliennes (sécurité, investissements stratégiques, défense, justice).
             Favoriser la liberté scolaire, relever le ratio privé/public.
             Faire de l’apprentissage de l’Histoire et du Français la priorité de l’enseignement .
             Libérer les entrepreneurs et les familles du poids de l’administration, encadrer l’ubérisation de l’économie, favoriser la négociation collective.
             Pour notre circonscription
-            Faire vivre notre démocratie et renforcer la confiance : cultiver la proximité avec mes électeurs et les consulter régulièrement en dehors des logiques de partis.
+            Faire vivre notre démocratie et renforcer la confiance : cultiver la proximité avec mes électeurs et les consulter régulièrement en dehors des logiques de partis.
             Faire de l’université de la Sorbonne le phare de la formation des élites des pays francophones ravagés par l’émigration .
             Appliquer le principe de subsidiarité : confier aux maires la responsabilité de la propreté de leurs arrondissements.
             avec Pauline Betton votre député au service du bien commun
@@ -249,14 +257,14 @@
             Primaires, ensuite j’ai loyalement
             soutenu la candidature de François
             Fillon à l’élection présidentielle.
-            Aujourd’hui cependant, je ne puis
+            Aujourd’hui cependant, je ne puis
             me résoudre à abandonner
             complètement le gouvernement
             du pays au nouveau chef de l’État
             pour les cinq prochaines années.
             C’est pourquoi, candidate de la famille et
             de la filiation, je me présente devant vous à la députation de
-            la deuxième circonscription  de Paris au siège  de François
+            la deuxième circonscription  de Paris au siège  de François
             Fillon, avec le soutien de Jean Frédéric Poisson.
             Je vous propose donc de nous parler pour reconstruire la
             droite et de voter pour moi les 11 et 18 juin prochains. En
@@ -270,7 +278,7 @@
             AVEC LE PCD, REDONNONS FIERTÉ ET DIGNITÉ À LA FRANCE !
             Découvrez nos candidats , notre projet et toutes nos propositions sur :
             Jean-Frédéric Poisson Président du PCD Député des Yvelines @PourAmourFrance partichretiendemocrate
-            30 ans, célibataire, diplômée d’EM LYON je vis et travaille à Paris. Expatriée à Moscou en 2013 j’ai défendu la filiation naturelle contre la loi « mariage pour tous » puis j’ai été élue conseiller consulaire en 2014.
+            30 ans, célibataire, diplômée d’EM LYON je vis et travaille à Paris. Expatriée à Moscou en 2013 j’ai défendu la filiation naturelle contre la loi « mariage pour tous » puis j’ai été élue conseiller consulaire en 2014.
             Je sais pouvoir compter sur Pauline Betton pour servir, résister, transmettre, et porter nos convictions, sans fléchir, à l’Assemblée nationale. Donnez-nous les moyens de porter votre voix. Pour l’amour de la France !
             MON SUPPLÉANT
             Jean de LÉOTOING
@@ -283,3 +291,4 @@
             >>>
 
             """
+  
