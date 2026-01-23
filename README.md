@@ -61,8 +61,6 @@ Les fournisseurs de LLM ont mis à disposition des guides  :
 - Mistral : https://colab.research.google.com/github/mistralai/cookbook/blob/main/mistral/prompting/prompting_capabilities.ipynb
 - OpenAI : https://colab.research.google.com/github/EnkrateiaLucca/oreilly_live_training_llm_apps/blob/main/notebooks/1.0-Intro-ChatGPT-API-prompt-basics.ipynb
 
-  
-⚠️ Il faut nécessairement une clé API.
 
 La version finale du prompt est disponible sur le GitHub : 
 https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Tests_prompt/prompt_final_SciencesPo
@@ -81,6 +79,8 @@ Fichier-échantillon : https://github.com/thecoolkided/Hackaton_Sciences_Po_Prof
 Résultats des tests de la version finale du prompt : 
 https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Tests_prompt
 
+
+⚠️ Il faut nécessairement une clé API pour tester les modèles. 
 
 
 ## Partie 3 - Tests finaux
