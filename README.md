@@ -116,7 +116,12 @@ Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/b
 
 ## Partie 5 - Évaluation des résultats
 
-Pour évaluer les résultats, nous avons créer à la main deux fichiers CSV témoins : un pour chaque batch0. Nous avons ensuite filtrer les résultats grâce à un correcteur de CSV que nous avons codé. Ce code nous a également permis d'obtenir le taux d'erreur pour chaque modèle sur chacun des deux batchs. Nous avons réuni ces résultats dans le tableau ci-dessous. 
+Pour évaluer les résultats, nous avons créer à la main deux fichiers CSV témoins : un pour chaque batch0. Nous avons ensuite filtrer les résultats grâce à un correcteur de CSV que nous avons codé. 
+
+Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Tests_finaux/Correcteur_csv.ipynb
+
+
+Ce code nous a également permis d'obtenir le taux d'erreur pour chaque modèle sur chacun des deux batchs. Nous avons réuni ces résultats dans le tableau ci-dessous. 
 
 
 |                     | Bacth0_OCR_Mistral                                                                 | Bacth0_OCR_fitz                                                                |
