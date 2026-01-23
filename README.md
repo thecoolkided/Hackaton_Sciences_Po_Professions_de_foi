@@ -135,7 +135,7 @@ A partir des ces résultas nous avons pu calculer le taux d'accuracy global pour
 | Ministral_3B     | 41.99%           |
 | ChatGPT          | 65.40%           |
 
-A noter que nous avons développé un autre procédé pour calculer l'accuracy des modèles testés. Il est également disponsible sur GitHub :
+A noter que nous avons développé un autre procédé pour calculer l'accuracy des modèles testés. Il est également disponsible sur ce GitHub :
 https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/code_evaluation_resultats_LLM
 
 ## Conclusion 
