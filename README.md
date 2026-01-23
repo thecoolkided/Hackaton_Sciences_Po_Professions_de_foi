@@ -1,6 +1,6 @@
 # Hackaton_Ecole_nationale_des_chartes_Projet_SciencesPo
 
-Repository du projet "Quand Archelec rencontre l'IA" proposé par Sciences Po pour le hackaton du master humanités numériques organisé par l'Ecole nationale des chartes en janvier 2026. 
+Repository du projet "Quand Archelec rencontre l'IA" proposé par Sciences Po pour le hackaton du master Humanités numériques organisé par l'Ecole nationale des Chartes en janvier 2026. 
 
 Objectif : Génération automatique de métadonnées à partir de professions de foi électorales françaises de 2017 à 2024.
 
@@ -24,19 +24,19 @@ https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/mai
 
 La bibliothèque **PyMuPDF (fitz)** est utilisée pour l’extraction du texte à partir des fichiers PDF. Elle permet un traitement rapide et efficace des documents, en donnant accès au contenu textuel structuré par pages et blocs, et a été appliquée au corpus initial.
  
-Un résultat positif a été obtenu pour la plupart des fichiers PDF. **3085 fichiers** sur 14 631 se sont avérés être des fichiers PDF dont il était impossible d'extraire le texte, car celui-ci faisait partie intégrante de l'image. Pour ces fichiers, une méthode supplémentaire d'extraction de texte a été utilisée.
+Un résultat satisfaisant a été obtenu pour la plupart des fichiers PDF. **3085 fichiers** sur 14 631 se sont avérés être des fichiers PDF dont il était impossible d'extraire le texte, car celui-ci faisait partie intégrante de l'image. Pour ces fichiers, une méthode supplémentaire d'extraction de texte a été utilisée.
 
 Code : 
 https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/SP_pymupython_OCR.ipynb
 
 **Methode  2**
 
-Pour les documents dont le texte fait partie de l'image et ne peut être copié de manière classique à l'aide des bibliothèques simples de traitement des documents PDF, nous avons utilisé la technologie de reconnaissance optique de caractères (OCR) basée sur le modèle Mistral OCR. Plus précisément, nous avons utilisé le modèle **« mistral-ocr-latest »**. Cette méthode est plus lente et payante, mais elle donne un résultat net.
+Pour les documents dont le texte fait partie de l'image et ne peut être copié de manière classique à l'aide des bibliothèques simples de traitement des documents PDF, nous avons utilisé la technologie de reconnaissance optique de caractères (OCR) basée sur le modèle Mistral OCR. Plus précisément, nous avons utilisé le modèle **« mistral-ocr-latest »**. Cette méthode est plus lente et payante, mais elle donne de bons résultats.
 
 Code : 
 https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/SP_Mistral_OCR.ipynb
 
-Exemples: 
+Exemples de résultats obtenus: 
 
 Methode 1 
 | filename                               | page_1 | page_2 |
@@ -50,11 +50,15 @@ Methode 2
 | LG17-1-1-BLATRIX-CONTAT-2-tour1-profession_foi.pdf | Florence BLATRIX-CONTAT — présentation personnelle et parcours politique... | Programme législatif et engagements (gauche, justice sociale, écologie, services publics)... |
 
 
-## Partie 2 - Le prompt
+## Partie 2 - Prédiction et classification des informations par appel à un LLM (Large language model)
+
+### 2.0 - Démarche
+Nous avons appelé des LLMs (modèles de langage comme ChatGPT ou Mistral) de façon à recevoir une classification des informations extraites du texte issu des professions de foi. Pour ce faire, nous avons appelé les modèles sur un prompt précisant le contenu et la forme attendus pour des sous-ensembles (batch) de données. 
+L'appel au LLM se fait pour chaque batch. On demande au modèle de retourner un texte sous un format particulier qui permet ensuite d'en automatiser la mise sous forme de fichier csv (tableur) réutilisable. Le format est un enjeu très important: il doit être suffisamment simple pour qu'un programme le transforme facilement en csv, et très stable de façon à pouvoir toujours utiliser la même fonction pour faire la transformation. 
 
 ### 2.1 - Écriture du prompt
 
-Nous avons réalisé plusieur écritures de prompts en essayant à chaque fois d'en améliorer la qualité. En effet, un prompt qualitatif
+Nous avons réalisé plusieurs écritures de prompts en essayant à chaque fois d'en améliorer la qualité. En effet, un prompt de bonne qualité
 et détaillé permet d'obtenir de meilleurs résultats. 
 
 Les fournisseurs de LLM ont mis à disposition des guides  : 
@@ -65,11 +69,11 @@ Les fournisseurs de LLM ont mis à disposition des guides  :
 La version finale du prompt est disponible sur le GitHub : 
 https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Tests_prompt/prompt_final_SciencesPo
 
-### 2.2 - Test du prompt sur Mistral Large 3 et Mistral 3 3B
+### 2.2 - Test du prompt sur Mistral Large 3 et Ministral 3 3B
 
-Mistral Large 3 est le modèle généraliste le plus performant proposé par Mistral, raison pour laquelle nous l'avons choisi pour soumettre les différentes versions de notre prompt. 
+Mistral Large 3 est le modèle généraliste le plus performant proposé par Mistral, c'est pourquoi nous l'avons choisi pour soumettre les différentes versions de notre prompt.
 
-Nous voulions également observer ce qu'un modèle moins puissant mais présenté comme plus rapide était capable de faire. C'est pourquoi nous avons choisi Mistral 3 3B également proposé par Mistral.
+Nous voulions également observer ce qu'un modèle moins puissant mais présenté comme plus rapide était capable de faire. C'est pourquoi nous avons choisi Ministral 3 3B également proposé par Mistral.
 
 Pour faire nos tests, nous avons constitué un fichier-échantillon csv composé de 5 professions de foi. Nous avons ensuite comparé les résultats obtenus avec les professions de foi en prenant soin de noter quelles informations manquaient, les éventuelles hallucinations etc. 
 
@@ -85,7 +89,7 @@ https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/mai
 
 ## Partie 3 - Tests finaux
 
-Une fois le prompt écrit, nous avons élargi les modèles sur lesquels le tester.
+Une fois le prompt écrit, nous avons élargi l'ensemble des modèles sur lesquels le tester.
 
 **Tableau des modèles sélectionnés** 
 
@@ -102,7 +106,7 @@ Liste des modèles mis à disposition par :
   
 ### Étape 1 - Batchs
 
-Afin de juger au mieux la performance de ces modèles, nous avons décidé de constituer un échantillon plus conséquent. Pour ce faire nous avons utilisé le procédé batch.
+Afin de juger au mieux la performance de ces modèles, nous avons décidé de constituer un échantillon plus conséquent. Pour ce faire nous avons utilisé le procédé batch (découpage du set de données en sous-ensembles).
  
 Code : 
 https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Batch
@@ -116,7 +120,8 @@ Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/b
 
 ## Partie 5 - Évaluation des résultats
 
-Pour évaluer les résultats, nous avons créer à la main deux fichiers CSV témoins : un pour chaque batch0. Nous avons ensuite filtrer les résultats grâce à un correcteur de CSV que nous avons codé. 
+### 5.0 Performances
+Pour évaluer les résultats, nous avons créé à la main deux fichiers CSV témoins : un pour chaque batch0 (premier sous-ensemble arbitrairement choisi pour chaque OCR). Nous avons ensuite filtré les résultats grâce à un correcteur de CSV que nous avons codé. 
 
 Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Tests_finaux/Correcteur_csv.ipynb
 
@@ -131,7 +136,7 @@ Ce code nous a également permis d'obtenir le taux d'erreur pour chaque modèle 
 | Ministral_3B        | Différences trouvées: 133/319 cellules (41.69%)<br>Colonnes manquantes: 2             | Différences trouvées: 210/275 cellules (76.36%)<br>Colonnes manquantes: 6       |
 | ChatGPT             | Différences trouvées: 118/341 cellules (34.60%)<br>Colonnes manquantes: 0             | NR                                                                             |
 
-A partir des ces résultas nous avons pu calculer le taux d'accuracy global pour chaque modèle et nous les avons réuni en un tableau.
+A partir des ces résultas, nous avons pu calculer le taux d'accuracy global pour chaque modèle. Les voici explicités ci-dessous.
 
 | Modèle           | Accuracy globale |
 |------------------|------------------|
@@ -143,17 +148,25 @@ A partir des ces résultas nous avons pu calculer le taux d'accuracy global pour
 A noter que nous avons développé un autre procédé pour calculer l'accuracy des modèles testés. Il est également disponsible sur ce GitHub :
 https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/code_evaluation_resultats_LLM
 
+### 5.1 Format
+Les modèles ont performé différemment en termes de qualité de format:
+* Mistral Large ne respecte pas le format demandé mais retourne une réponse organisée de manière stable et réutilisable
+* Mistral Small ne respecte pas non plus le format demandé mais retourne une réponse organisée et réutilisable. Nous n'avons pas eu l'occasion d'en tester la stabilité.
+* Ministral ne respecte pas le format demandé et retourne des réponses au format instable, donc rendant l'automatisation de la mise en forme peu faisable.
+* ChatGPT ne respecte pas non plus le format demandé et retourne des réponses à la fois instables et incomplètes. 
+
 ## Conclusion 
 
 En nous fiant à ces résultats préliminaires, Mistral Small apparaît être le modèle le plus fiable. Mistral Small est un des modèles généralistes proposés par Mistral. Il était pourtant décrit comme moins performant que le modèle le plus puissant, Mistral Large 3, ce qui démontre l'importance du benchmarking lorsqu'on s'attèle à un telle tâche.
 
 Nous recommandons de laisser de côté ChatGPT. Malgrés des performances correctes sur un des batchs, il n'est pas conçu pour ce genre de travail et la mise à l'échelle se montrerait plus que complexe au vu de la quantité de données à traiter.
+En effet, les données en sortie produites par ChatGPT n'ont pas toujours le même format. Et dans le cas d'une mise à l'échelle, le format des données en sortie est un facteur primordial de la qualité du résultat. Un programme comme ChatGPT dont le format des sorties n'est pas toujours le même est peu (voire pas) pertinent parce qu'il ne sera pas possible d'en transformer les résultats vers un format csv réutilisable. 
 
 Bien que sélectionné, nous n'avons pu obtenir de résultats pour GPT5-nano, raison pour laquelle il ne figure pas dans les tableaux récapitulatifs.
 
 Enfin, pour ce qui est de la mise à l'échelle, deux options sont possibles. 
 1. Mettre à l'échelle batch par batch. Le processus sera long mais il aura le mérite d'avoir été testé et approuvé.
-2. Mettre à l'échelle en traitant plusieurs batchs en même temps. Le processsus sera plus rapide mais cela requerra une modification du code_test_batch_mistralipynb ainsi que du correcteur de CSV. 
+2. Mettre à l'échelle en traitant plusieurs batchs en même temps. Le processsus sera plus rapide mais cela requerra une modification du code_test_batch_mistralipynb ainsi que du correcteur de CSV.
 
 
 
