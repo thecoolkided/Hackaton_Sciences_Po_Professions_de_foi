@@ -126,6 +126,15 @@ Pour évaluer les résultats, nous avons créer à la main deux fichiers CSV té
 | Ministral_3B        | Différences trouvées: 133/319 cellules (41.69%)<br>Colonnes manquantes: 2             | Différences trouvées: 210/275 cellules (76.36%)<br>Colonnes manquantes: 6       |
 | ChatGPT             | Différences trouvées: 118/341 cellules (34.60%)<br>Colonnes manquantes: 0             | NR                                                                             |
 
+A partir des ces résultas nous avons pu calculer le taux d'accuracy global pour chaque modèle et nous les avons réuni en un tableau.
+
+| Modèle           | Accuracy globale |
+|------------------|------------------|
+| Mistral_Large_3  | 60.83%           |
+| Mistral_Small    | 84.31%           |
+| Ministral_3B     | 41.99%           |
+| ChatGPT          | 65.40%           |
+
 
 
 
