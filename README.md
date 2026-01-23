@@ -119,6 +119,15 @@ Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/b
 Pour évaluer les résultats, nous avons créer à la main deux fichiers CSV témoins : un pour chaque batch0. Nous avons ensuite filter les résultats grâce à un correcteur de CSV que nous avons codé également. Ce code nous a également permis d'obtenir le taux d'erreur pour chaque modèle sur chacun des deux batchs. Nous avons réuni ces résultats dans le tableau ci-dessous. 
 
 
+|                     | Bacth0_OCR_Mistral                                                                 | Bacth0_OCR_fitz                                                                |
+|---------------------|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| Mistral_Large_3     | Différences trouvées: 106/286 cellules (37.06%)<br>Colonnes manquantes: 5             | Différences trouvées: 141/341 cellules (41.35%)<br>Colonnes manquantes: 0       |
+| Mistral_Small       | Différences trouvées: 64/341 cellules (18.77%)<br>Colonnes manquantes: 0              | Différences trouvées: 43/341 cellules (12.61%)<br>Colonnes manquantes: 0        |
+| Ministral_3B        | Différences trouvées: 133/319 cellules (41.69%)<br>Colonnes manquantes: 2             | Différences trouvées: 210/275 cellules (76.36%)<br>Colonnes manquantes: 6       |
+| ChatGPT             | Différences trouvées: 118/341 cellules (34.60%)<br>Colonnes manquantes: 0             | NR                                                                             |
+
+
+
 
 
 
