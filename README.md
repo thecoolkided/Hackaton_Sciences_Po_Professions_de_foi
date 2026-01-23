@@ -142,6 +142,8 @@ En nous fiant à ces résultats préliminaires, Mistral Small apparaît être le
 
 Nous recommandons de laisser de côté ChatGPT. Malgrés des performances correctes sur un des batchs, il n'est pas conçu pour ce genre de travail et la mise à l'échelle se montrerait plus que complexe au vu de la quantité de données à traiter.
 
+Bien que sélectionné, nous n'avons pu obtenir de résultats pour GPT5-nano, raison pour laquelle il ne figure pas dans le tableau.
+
 Pour une mise à l'échelle efficace nous recommendons de traiter plusieurs batchs à la fois de manière à obtenir des résultats plus rapidement. Il en est de même avec le correcteur de CSV. Pour ce faire, il faudra modifier le prompt ainsi que le code du correcteur.
 
 
