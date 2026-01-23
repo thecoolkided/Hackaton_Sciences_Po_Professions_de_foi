@@ -153,7 +153,7 @@ Bien que sélectionné, nous n'avons pu obtenir de résultats pour GPT5-nano, ra
 
 Enfin, pour ce qui est de la mise à l'échelle, deux options sont possibles. 
 1. Mettre à l'échelle batch par batch. Le processus sera long mais il aura le mérite d'avoir été testé et approuvé.
-2. Mettre à l'échelle en traitant plusieurs batchs en même temps. Le processsus sera plus rapide mais il cela requerra une modification du code_test_batch_mistralipynb ainsi que du correcteur de CSV. 
+2. Mettre à l'échelle en traitant plusieurs batchs en même temps. Le processsus sera plus rapide mais cela requerra une modification du code_test_batch_mistralipynb ainsi que du correcteur de CSV. 
 
 
 
