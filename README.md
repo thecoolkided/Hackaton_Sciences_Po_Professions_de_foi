@@ -1,6 +1,6 @@
 # Hackaton_Ecole_nationale_des_chartes_Projet_SciencesPo
 
-Repo du projet "Quand Archelec rencontre l'IA" proposé par Sciences Po pour le hackaton du master humanités numériques organisé par l'Ecole nationale des chartes en janvier 2026. 
+Repository du projet "Quand Archelec rencontre l'IA" proposé par Sciences Po pour le hackaton du master humanités numériques organisé par l'Ecole nationale des chartes en janvier 2026. 
 
 Objectif : Génération automatique de métadonnées à partir de professions de foi électorales françaises de 2017 à 2024.
 
