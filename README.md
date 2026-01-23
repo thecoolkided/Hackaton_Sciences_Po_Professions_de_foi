@@ -116,7 +116,7 @@ Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/b
 
 ## Partie 5 - Évaluation des résultats
 
-Pour évaluer les résultats, nous avons créer à la main deux fichiers CSV témoins : un pour chaque batch0. Nous avons ensuite filter les résultats grâce à un correcteur de CSV que nous avons codé également. Ce code nous a également permis d'obtenir le taux d'erreur pour chaque modèle sur chacun des deux batchs. Nous avons réuni ces résultats dans le tableau ci-dessous. 
+Pour évaluer les résultats, nous avons créer à la main deux fichiers CSV témoins : un pour chaque batch0. Nous avons ensuite filtrer les résultats grâce à un correcteur de CSV que nous avons codé. Ce code nous a également permis d'obtenir le taux d'erreur pour chaque modèle sur chacun des deux batchs. Nous avons réuni ces résultats dans le tableau ci-dessous. 
 
 
 |                     | Bacth0_OCR_Mistral                                                                 | Bacth0_OCR_fitz                                                                |
@@ -136,6 +136,13 @@ A partir des ces résultas nous avons pu calculer le taux d'accuracy global pour
 | ChatGPT          | 65.40%           |
 
 
+## Conclusion 
+
+En nous fiant à ces résultats préliminaires, Mistral Small apparaît être le modèle le plus fiable. Mistral Small est un des modèles généralistes proposés par Mistral. Il était pourtant décrit comme moins performant que le modèle le plus puissant, Mistral Large 3, ce qui démontre l'importance du benchmarking lorsqu'on s'attèle à un telle tâche.
+
+Nous recommandons de laisser de côté ChatGPT. Malgrés des performances correctes sur un des batchs, il n'est pas conçu pour ce genre de travail et la mise à l'échelle se montrerait plus que complexe au vu de la quantité de données à traiter.
+
+Pour une mise à l'échelle efficace nous recommendons de traiter plusieurs batchs à la fois de manière à obtenir des résultats plus rapidement. Il en est de même avec le correcteur de CSV. Pour ce faire, il faudra modifier le prompt ainsi que le code du correcteur.
 
 
 
