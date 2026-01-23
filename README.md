@@ -69,7 +69,7 @@ https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/mai
 
 ### 2.2 - Test du prompt sur Mistral Large 3 et Mistral 3 3B
 
-Mistral Large 3 est le modèle généraliste le plus performant proposé par Mistral, raison pour laquelle nous l'avons choisi pour soumettre les différentes versions de notre prompt. Cela nous a également permis de tester sa fiabilité.
+Mistral Large 3 est le modèle généraliste le plus performant proposé par Mistral, raison pour laquelle nous l'avons choisi pour soumettre les différentes versions de notre prompt. 
 
 Nous voulions également observer ce qu'un modèle moins puissant mais présenté comme plus rapide était capable de faire. C'est pourquoi nous avons choisi Mistral 3 3B également proposé par Mistral.
 
