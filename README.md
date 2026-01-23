@@ -107,32 +107,20 @@ Afin de juger au mieux la performance de ces modèles, nous avons décidé de co
 Code : 
 https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/Batch
 
-### Étape 2 - Tests
+### Étape 2 - Tests finaux
 
-Les tests finaux ont étés réalisés en suivant le même script (code).
+Les tests finaux ont étés réalisés en suivant le même le prompt.
 
 Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/code_traitement_professions_de_foi_par_categorisation.ipynb
 
 
 ## Partie 5 - Évaluation des résultats
 
-Code : 
-https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/code_evaluation_resultats_LLM
+Pour évaluer les résultats, nous avons créer à la main deux fichiers CSV témoins : un pour chaque batch0. Nous avons ensuite filter les résultats grâce à un correcteur de CSV que nous avons codé également. Ce code nous a également permis d'obtenir le taux d'erreur pour chaque modèle sur chacun des deux batchs. Nous avons réuni ces résultats dans le tableau ci-dessous. 
 
-#### Métriques : 
+|                               |       Bacth0_OCR_Mistral                                              | Bacth0_OCR_fitz |        
+|-------------------------------|------------------------------------------------------------------------
+|          Mistral_Large_3      | Différences trouvées: 106/286 cellules (37.06%) Colonnes manquantes: 5
 
-Methode 1 : OCR PDF
-
-| model           | cell_accuracy |
-|-----------------|---------------|
-| Mistral Large 3 | 0.897361      |
-
-Methode 2 : OCR Mistral
-
-| model              | cell_accuracy |
-|--------------------|---------------|
-| Mistral Large 3    | 0.973607      |
-| ChatBot ChatGPT    | 0.413490      |
-| Ministral 3 3B       | 0.346041      |
 
 
