@@ -29,7 +29,7 @@ Un résultat satisfaisant a été obtenu pour la plupart des fichiers PDF. **308
 Code : 
 https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/SP_pymupython_OCR.ipynb
 
-**Methode  2**
+**Methode 2**
 
 Pour les documents dont le texte fait partie de l'image et ne peut être copié de manière classique à l'aide des bibliothèques simples de traitement des documents PDF, nous avons utilisé la technologie de reconnaissance optique de caractères (OCR) basée sur le modèle Mistral OCR. Plus précisément, nous avons utilisé le modèle **« mistral-ocr-latest »**. Cette méthode est plus lente et payante, mais elle donne de bons résultats.
 
@@ -53,8 +53,10 @@ Methode 2
 ## Partie 2 - Prédiction et classification des informations par appel à un LLM (Large language model)
 
 ### 2.0 - Démarche
-Nous avons appelé des LLMs (modèles de langage comme ChatGPT ou Mistral) de façon à recevoir une classification des informations extraites du texte issu des professions de foi. Pour ce faire, nous avons appelé les modèles sur un prompt précisant le contenu et la forme attendus pour des sous-ensembles (batch) de données. 
-L'appel au LLM se fait pour chaque batch. On demande au modèle de retourner un texte sous un format particulier qui permet ensuite d'en automatiser la mise sous forme de fichier csv (tableur) réutilisable. Le format est un enjeu très important: il doit être suffisamment simple pour qu'un programme le transforme facilement en csv, et très stable de façon à pouvoir toujours utiliser la même fonction pour faire la transformation. C'est la raison pour laquelle nous avons améliorer notre prompt en le testant un un fichier-échantillon constitué de 5 professions de foi. 
+
+Nous avons utilisé des LLMs (modèles de langage comme ChatGPT ou Mistral) de façon à recevoir une classification des informations extraites du texte issu des professions de foi. Pour ce faire, nous avons appelé les modèles sur un prompt précisant le contenu et la forme attendus pour des sous-ensembles (batch) de données.
+
+L'appel au LLM se fait pour chaque batch. On demande au modèle de retourner un texte sous un format particulier qui permet ensuite d'en automatiser la mise sous forme de fichier csv (tableur) réutilisable. Le format est un enjeu très important. En effet, il doit être suffisamment simple pour qu'un programme le transforme facilement en csv, et très stable de façon à pouvoir toujours utiliser la même fonction pour faire la transformation. C'est la raison pour laquelle nous avons améliorer notre prompt en le testant un un fichier-échantillon constitué de 5 professions de foi. 
 
 ### 2.1 - Écriture du prompt
 
@@ -121,6 +123,7 @@ Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/b
 ## Partie 5 - Évaluation des résultats
 
 ### 5.0 Performances
+
 Pour évaluer les résultats, nous avons créé à la main deux fichiers CSV témoins : un pour chaque batch0 (premier sous-ensemble arbitrairement choisi pour chaque OCR). Nous avons ensuite filtré les résultats grâce à un correcteur de CSV que nous avons codé. 
 
 Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Tests_finaux/Correcteur_csv.ipynb
