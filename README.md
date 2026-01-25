@@ -106,8 +106,7 @@ Une fois le prompt écrit, nous avons élargi l'ensemble des modèles sur lesque
 Il existe d'autres modèles mis à disposition par : 
 - Mistral : https://docs.mistral.ai/getting-started/models
 - OpenAI : https://platform.openai.com/docs/models
-
-  
+ 
 ### Étape 1 - Batchs
 
 Afin de juger au mieux la performance de ces modèles, nous avons décidé de constituer un échantillon plus conséquent. Pour ce faire nous avons utilisé le procédé batch (découpage du set de données en sous-ensembles).
@@ -158,14 +157,17 @@ Les modèles ont performé différemment en termes de qualité de format:
 * Mistral Large ne respecte pas le format demandé mais retourne une réponse organisée de manière stable et réutilisable
 * Mistral Small ne respecte pas non plus le format demandé mais retourne une réponse organisée et réutilisable. Nous n'avons pas eu l'occasion d'en tester la stabilité.
 * Ministral ne respecte pas le format demandé et retourne des réponses au format instable, ce qui l'automatisation de la mise en forme difficile.
-* ChatGPT ne respecte pas non plus le format demandé et retourne des réponses à la fois instables et incomplètes. 
+* ChatGPT ne respecte pas non plus le format demandé et retourne des réponses à la fois instables et incomplètes.
+
+  
 
 ## Conclusion 
 
 En nous fiant à ces résultats préliminaires, Mistral Small apparaît être le modèle le plus fiable. Mistral Small est un des modèles généralistes proposés par Mistral. Il était pourtant décrit comme moins performant que le modèle le plus puissant, Mistral Large 3, ce qui démontre l'importance du benchmarking lorsqu'on s'attèle à un telle tâche.
 
 Nous recommandons de laisser de côté ChatGPT. Malgrés des performances correctes sur un des batchs, il n'est pas conçu pour ce genre de travail et la mise à l'échelle se montrerait plus que complexe au vu de la quantité de données à traiter.
-En effet, les données en sortie produites par ChatGPT n'ont pas toujours le même format, ce qui pose problème puisque pour une mise à l'échelle, le format des données en sortie est un facteur primordial de la qualité du résultat. Un programme comme ChatGPT dont le format des sorties n'est pas toujours le même est peu (voire pas) pertinent parce qu'il ne sera pas possible de transformer les résultats vers un format csv réutilisable. 
+En effet, les données en sortie produites par ChatGPT n'ont pas toujours le même format, ce qui pose problème puisque pour une mise à l'échelle, le format des données en sortie est un facteur primordial de la qualité du résultat. 
+De fait, un programme comme ChatGPT dont le format des sorties n'est pas toujours le même est peu (voire pas) pertinent parce qu'il ne sera pas possible de transformer les résultats vers un format csv réutilisable. 
 
 Bien que sélectionné, nous n'avons pu obtenir de résultats pour GPT5-nano, raison pour laquelle il ne figure pas dans les tableaux récapitulatifs.
 
