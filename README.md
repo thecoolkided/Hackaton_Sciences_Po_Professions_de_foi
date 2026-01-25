@@ -54,7 +54,7 @@ Methode 2
 
 ### 2.0 - Démarche
 Nous avons appelé des LLMs (modèles de langage comme ChatGPT ou Mistral) de façon à recevoir une classification des informations extraites du texte issu des professions de foi. Pour ce faire, nous avons appelé les modèles sur un prompt précisant le contenu et la forme attendus pour des sous-ensembles (batch) de données. 
-L'appel au LLM se fait pour chaque batch. On demande au modèle de retourner un texte sous un format particulier qui permet ensuite d'en automatiser la mise sous forme de fichier csv (tableur) réutilisable. Le format est un enjeu très important: il doit être suffisamment simple pour qu'un programme le transforme facilement en csv, et très stable de façon à pouvoir toujours utiliser la même fonction pour faire la transformation. 
+L'appel au LLM se fait pour chaque batch. On demande au modèle de retourner un texte sous un format particulier qui permet ensuite d'en automatiser la mise sous forme de fichier csv (tableur) réutilisable. Le format est un enjeu très important: il doit être suffisamment simple pour qu'un programme le transforme facilement en csv, et très stable de façon à pouvoir toujours utiliser la même fonction pour faire la transformation. C'est la raison pour laquelle nous avons améliorer notre prompt en le testant un un fichier-échantillon constitué de 5 professions de foi. 
 
 ### 2.1 - Écriture du prompt
 
@@ -152,7 +152,7 @@ https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/mai
 Les modèles ont performé différemment en termes de qualité de format:
 * Mistral Large ne respecte pas le format demandé mais retourne une réponse organisée de manière stable et réutilisable
 * Mistral Small ne respecte pas non plus le format demandé mais retourne une réponse organisée et réutilisable. Nous n'avons pas eu l'occasion d'en tester la stabilité.
-* Ministral ne respecte pas le format demandé et retourne des réponses au format instable, donc rendant l'automatisation de la mise en forme peu faisable.
+* Ministral ne respecte pas le format demandé et retourne des réponses au format instable, ce qui l'automatisation de la mise en forme difficile.
 * ChatGPT ne respecte pas non plus le format demandé et retourne des réponses à la fois instables et incomplètes. 
 
 ## Conclusion 
@@ -160,7 +160,7 @@ Les modèles ont performé différemment en termes de qualité de format:
 En nous fiant à ces résultats préliminaires, Mistral Small apparaît être le modèle le plus fiable. Mistral Small est un des modèles généralistes proposés par Mistral. Il était pourtant décrit comme moins performant que le modèle le plus puissant, Mistral Large 3, ce qui démontre l'importance du benchmarking lorsqu'on s'attèle à un telle tâche.
 
 Nous recommandons de laisser de côté ChatGPT. Malgrés des performances correctes sur un des batchs, il n'est pas conçu pour ce genre de travail et la mise à l'échelle se montrerait plus que complexe au vu de la quantité de données à traiter.
-En effet, les données en sortie produites par ChatGPT n'ont pas toujours le même format. Et dans le cas d'une mise à l'échelle, le format des données en sortie est un facteur primordial de la qualité du résultat. Un programme comme ChatGPT dont le format des sorties n'est pas toujours le même est peu (voire pas) pertinent parce qu'il ne sera pas possible d'en transformer les résultats vers un format csv réutilisable. 
+En effet, les données en sortie produites par ChatGPT n'ont pas toujours le même format, ce qui pose problème puisque pour une mise à l'échelle, le format des données en sortie est un facteur primordial de la qualité du résultat. Un programme comme ChatGPT dont le format des sorties n'est pas toujours le même est peu (voire pas) pertinent parce qu'il ne sera pas possible de transformer les résultats vers un format csv réutilisable. 
 
 Bien que sélectionné, nous n'avons pu obtenir de résultats pour GPT5-nano, raison pour laquelle il ne figure pas dans les tableaux récapitulatifs.
 
