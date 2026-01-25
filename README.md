@@ -54,9 +54,11 @@ Methode 2
 
 ### 2.0 - Démarche
 
-Nous avons utilisé des LLMs (modèles de langage comme ChatGPT ou Mistral) de façon à recevoir une classification des informations extraites du texte issu des professions de foi. Pour ce faire, nous avons appelé les modèles sur un prompt précisant le contenu et la forme attendus pour des sous-ensembles (batch) de données.
+Nous avons appelé (utilisé) des LLMs (modèles de langage comme ChatGPT ou Mistral) de façon à recevoir une classification des informations extraites du texte issu des professions de foi. Pour ce faire, nous avons appelé les modèles sur un prompt précisant le contenu et la forme attendus pour des sous-ensembles (batch) de données.
 
-L'appel au LLM se fait pour chaque batch. On demande au modèle de retourner un texte sous un format particulier qui permet ensuite d'en automatiser la mise sous forme de fichier csv (tableur) réutilisable. Le format est un enjeu très important. En effet, il doit être suffisamment simple pour qu'un programme le transforme facilement en csv, et très stable de façon à pouvoir toujours utiliser la même fonction pour faire la transformation. C'est la raison pour laquelle nous avons améliorer notre prompt en le testant un un fichier-échantillon constitué de 5 professions de foi. 
+L'appel au LLM se fait pour chaque batch. On demande au modèle de retourner un texte sous un format particulier qui permet ensuite d'en automatiser la mise sous forme de fichier csv (tableur) réutilisable. Le format est un enjeu très important. En effet, il doit être suffisamment simple pour qu'un programme le transforme facilement en csv, et très stable de façon à pouvoir toujours utiliser la même fonction pour faire la transformation. 
+
+C'est la raison pour laquelle nous avons améliorer notre prompt en le testant sur un fichier-échantillon constitué de 5 professions de foi. 
 
 ### 2.1 - Écriture du prompt
 
