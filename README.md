@@ -50,6 +50,7 @@ Methode 2
 | LG17-1-1-BLATRIX-CONTAT-2-tour1-profession_foi.pdf | Florence BLATRIX-CONTAT — présentation personnelle et parcours politique... | Programme législatif et engagements (gauche, justice sociale, écologie, services publics)... |
 
 
+
 ## Partie 2 - Prédiction et classification des informations par appel à un LLM (Large language model)
 
 ### 2.0 - Démarche
