@@ -155,7 +155,7 @@ https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/mai
 
 ### 5.1 Format
 Les modèles ont performé différemment en termes de qualité de format:
-* Mistral Large ne respecte pas le format demandé mais retourne une réponse organisée de manière stable et réutilisable
+* Mistral Large ne respecte pas le format demandé mais retourne une réponse organisée de manière stable et réutilisable.
 * Mistral Small ne respecte pas non plus le format demandé mais retourne une réponse organisée et réutilisable. Nous n'avons pas eu l'occasion d'en tester la stabilité.
 * Ministral ne respecte pas le format demandé et retourne des réponses au format instable, ce qui l'automatisation de la mise en forme difficile.
 * ChatGPT ne respecte pas non plus le format demandé et retourne des réponses à la fois instables et incomplètes.
