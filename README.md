@@ -103,7 +103,7 @@ Une fois le prompt écrit, nous avons élargi l'ensemble des modèles sur lesque
 | Magistral Small 1.2 | Chatbot ChatGPT|
 | Ministral 3 3B      
 
-Liste des modèles mis à disposition par : 
+Il existe d'autres modèles mis à disposition par : 
 - Mistral : https://docs.mistral.ai/getting-started/models
 - OpenAI : https://platform.openai.com/docs/models
 
