@@ -14,6 +14,8 @@ Objectif : Génération automatique de métadonnées à partir de professions de
 
 ## Partie 1 - Extraction de textes à partir des pdfs
 
+### 2.0 - Les données
+
 L'ensemble des données comprend **19 194 documents** au format PDF.
 
 Liens d'accès : 
@@ -29,7 +31,7 @@ https://github.com/regardscitoyens/professions-foi-candidats-2021/tree/main/docu
 - 2024
 https://github.com/regardscitoyens/professions-foi-candidats-2021/tree/main/documents/LG24
 
-
+### Méthodes d'extraction 
 
 Les documents _falc ont été supprimés en premier lieu de la base de données initiale, car ces fichiers sont complémentaires aux professions de foi déjà existantes et ne font que doubler les informations. Après cette procédure, la base de données a été réduite à **14 631 documents**.
 
