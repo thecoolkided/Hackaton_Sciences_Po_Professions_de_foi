@@ -23,7 +23,7 @@ https://github.com/regardscitoyens/professions-foi-candidats/tree/master/documen
 - 2020
 https://github.com/regardscitoyens/professions-foi-candidats/tree/master/documents/LG20
                      
--2022
+- 2022
 https://github.com/regardscitoyens/professions-foi-candidats-2021/tree/main/documents/LG22
 
 - 2024
