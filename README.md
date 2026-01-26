@@ -19,10 +19,13 @@ L'ensemble des données comprend **19 194 documents** au format PDF.
 Liens d'accès : 
 - 2017
 https://github.com/regardscitoyens/professions-foi-candidats/tree/master/documents/LG17
+
 - 2020
 https://github.com/regardscitoyens/professions-foi-candidats/tree/master/documents/LG20
+                     
 -2022
 https://github.com/regardscitoyens/professions-foi-candidats-2021/tree/main/documents/LG22
+
 - 2024
 https://github.com/regardscitoyens/professions-foi-candidats-2021/tree/main/documents/LG24
 
