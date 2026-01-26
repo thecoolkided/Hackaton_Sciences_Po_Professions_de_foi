@@ -30,6 +30,7 @@ https://github.com/regardscitoyens/professions-foi-candidats-2021/tree/main/docu
 https://github.com/regardscitoyens/professions-foi-candidats-2021/tree/main/documents/LG24
 
 
+
 Les documents _falc ont été supprimés en premier lieu de la base de données initiale, car ces fichiers sont complémentaires aux professions de foi déjà existantes et ne font que doubler les informations. Après cette procédure, la base de données a été réduite à **14 631 documents**.
 
 Code : 
