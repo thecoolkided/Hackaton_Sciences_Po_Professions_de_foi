@@ -16,6 +16,17 @@ Objectif : Génération automatique de métadonnées à partir de professions de
 
 L'ensemble des données comprend **19 194 documents** au format PDF.
 
+Liens d'accès : 
+- 2017
+https://github.com/regardscitoyens/professions-foi-candidats/tree/master/documents/LG17
+- 2020
+https://github.com/regardscitoyens/professions-foi-candidats/tree/master/documents/LG20
+-2022
+https://github.com/regardscitoyens/professions-foi-candidats-2021/tree/main/documents/LG22
+- 2024
+https://github.com/regardscitoyens/professions-foi-candidats-2021/tree/main/documents/LG24
+
+
 Les documents _falc ont été supprimés en premier lieu de la base de données initiale, car ces fichiers sont complémentaires aux professions de foi déjà existantes et ne font que doubler les informations. Après cette procédure, la base de données a été réduite à **14 631 documents**.
 
 Code : 
