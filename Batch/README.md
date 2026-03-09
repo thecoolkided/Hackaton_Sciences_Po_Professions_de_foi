@@ -7,4 +7,4 @@ Deux dossiers contiennent les batchs effectués sur les résultats des deux OCR 
 
 **Exemple :**
 
-batch_test_mistral_O = 11 professions de fois.
+batch_test_mistral_0 = 11 professions de fois.
