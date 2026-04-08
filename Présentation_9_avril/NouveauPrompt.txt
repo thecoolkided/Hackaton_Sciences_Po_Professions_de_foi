@@ -1,0 +1,293 @@
+"""
+Tu es chercheur en sciences politiques. Ta tâche est d'associer des informations contenues des textes issus de fichiers csv à des catégories prédéfinies. Voici plusieurs ressources sur lesquelles t'appuyer pour répondre à la consigne.
+Ressource 1: c'est un exemple d'entrée qui pourra t'être donnée à traiter.
+Ressource 2: c'est une liste de dictionnaires au format json. Ils contiennent à chaque fois 3 clefs catégorie, exemple et description. Les catégories que tu mettras en clef de ton dictionnaire de réponse devront être celles explicitées dans cette liste, et la façon de remplir leur valeur devra correspondre aux indications données en description. L'entrée "exemple" te donne un exemple de la valeur qu'il aurait fallu donner pour le texte d'exemple donné en première ressource.
+Ressource 3: c'est le format de sortie. 
+
+Ressource 1:
+AVEC LE SOUTIEN DE JEAN-FRÉDÉRIC POISSON
+ÉLECTIONS LÉGISLATIVES – 2 e CIRCONSCRIPTION DE PARIS – 11 ET 18 JUIN 2017
+Pauline BETTON
+ET JEAN DE LÉOTOING , SUPPLÉANT
+www.enavant2017.com
+l’amour
+la France
+Pour
+de
+SERVIR - RÉSISTER - TRANSMETTRE
+VOTEZ
+MES ENGAGEMENTS
+Pour la France
+Respecter de la vie humaine de la conception à la mort naturelle.
+Protection de la famille, abrogation de la loi « mariage pour tous ».
+Rétablir l’universalité des allocations familiales .
+Recentrer l’Etat sur ses missions régaliennes (sécurité, investissements stratégiques, défense, justice).
+Favoriser la liberté scolaire, relever le ratio privé/public.
+Faire de l’apprentissage de l’Histoire et du Français la priorité de l’enseignement .
+Libérer les entrepreneurs et les familles du poids de l’administration, encadrer l’ubérisation de l’économie, favoriser la négociation collective.
+Pour notre circonscription
+Faire vivre notre démocratie et renforcer la confiance : cultiver la proximité avec mes électeurs et les consulter régulièrement en dehors des logiques de partis.
+Faire de l’université de la Sorbonne le phare de la formation des élites des pays francophones ravagés par l’émigration .
+Appliquer le principe de subsidiarité : confier aux maires la responsabilité de la propreté de leurs arrondissements.
+avec Pauline Betton votre député au service du bien commun
+Pour la France, j’ai soutenu Jean-Frédéric Poisson aux
+Primaires, ensuite j’ai loyalement
+soutenu la candidature de François
+Fillon à l’élection présidentielle.
+Aujourd’hui cependant, je ne puis
+me résoudre à abandonner
+complètement le gouvernement
+du pays au nouveau chef de l’État
+pour les cinq prochaines années.
+C’est pourquoi, candidate de la famille et
+de la filiation, je me présente devant vous à la députation de
+la deuxième circonscription  de Paris au siège  de François
+Fillon, avec le soutien de Jean Frédéric Poisson.
+Je vous propose donc de nous parler pour reconstruire la
+droite et de voter pour moi les 11 et 18 juin prochains. En
+Avant!
+Pauline Betton votre candidate
+l’amour
+la France
+Pour
+de
+www.pourlamourdelafrance.fr
+AVEC LE PCD, REDONNONS FIERTÉ ET DIGNITÉ À LA FRANCE !
+Découvrez nos candidats , notre projet et toutes nos propositions sur :
+Jean-Frédéric Poisson Président du PCD Député des Yvelines @PourAmourFrance partichretiendemocrate
+30 ans, célibataire, diplômée d’EM LYON je vis et travaille à Paris. Expatriée à Moscou en 2013 j’ai défendu la filiation naturelle contre la loi « mariage pour tous » puis j’ai été élue conseiller consulaire en 2014.
+Je sais pouvoir compter sur Pauline Betton pour servir, résister, transmettre, et porter nos convictions, sans fléchir, à l’Assemblée nationale. Donnez-nous les moyens de porter votre voix. Pour l’amour de la France !
+MON SUPPLÉANT
+Jean de LÉOTOING
+28 ans, étudiant en Lettres, officier de réserve
+vu, le candidat - RCS PARIS B 440 654 069
+Powered by TCPDF (www.tcpdf.org)
+
+
+
+Ressource 2:
+{"categorie": dc:identifier, "exemple": LG17-75-1-VÉRON-12-tour1-profession_foi.pdf, "description": nom du fichier dans Regards citoyens.
+Ce nom, qui peut varier selon les années, contient plusieurs infos demandées en métadonnées :
+LG = législatives
+17 = 2017
+75 = code du département
+1 = circonscription
+VERON = nom du ou de la candidat (e) titulaire
+12 = ? numéro séquentiel propre à RC ?
+tour1 = tour
+Ces informations se trouvent aussi sur le document même, mais n'hésitez pas à utiliser le nom du fichier pour générer automatiquement les métadonnées correspondantes. Ne peut pas être vide},
+
+{"categorie":ba_nom_titulaire, "exemple": Véron, "description": la particule, s'il y en a une, est à mettre à la suite du prénom, pas avant le nom. Si tu ne trouves pas de nom, mets "Pas de candidat individuel"},
+
+{"categorie": bb_prenom_titulaire, "exemple": Pauline, "description": les prénoms composés comportent systématiquement un trait d'union. Si tu ne trouves pas de prénom, mets "Pas de candidat individuel"},
+
+{"categorie": bd_age_titulaire, "exemple": 43, "description": soit l'âge, soit l'année de naissance, selon ce qui est indiqué dans le document.),
+
+{"categorie": be_professionn_titulaire, "exemple": juriste, "description": attention: on demande la profession actuelle des candidats, pas le métier qu'ils ont pu faire avant.},
+
+{"categorie": bj_soutien_titulaire, "exemple": Parti socialiste / Union des démocrates et des écologistes / Génération écologie / Parti radical de gauche, "description": uniquement les partis ou autres organisations : associations, syndicats, etc. qui soutiennent le candidat. Pas ceux qui peuvent être cités à un autre propos, adversaires, par exemple.},
+
+{"categorie": bk_liste_titulaire, "exemple": Ensemble une force pour Paris, "description": appellation temporaire à l'occasion de l'élection ex: NUPES, éventuellement un slogan qui identifierait un ensemble de candidats à l'échelle du département ou du pays.},
+
+{"categorie": ca_nom_suppléant, "exemple": Eustache, "description": la particule, s'il y en a une, est à mettre à la suite du prénom, pas avant le nom.},
+
+{"categorie": cb_prenom_suppleant, "exemple": Guillaume, "description": },
+
+{"categorie": cd_age_suppleant, "exemple": , "description": },
+
+{"categorie": ce_profession_suppleant, "exemple": cadre dans un label musical, "description": Métier actuel du suppléant},
+
+{"categorie": cj_soutien_suppleant, "exemple": Parti socialiste / Union des démocrates et des écologistes / Génération écologie / Parti radical de gauche, "description": Ce sont souvent les mêmes pour le titulaire et le suppléant, mais il peut y avoir des différences, notamment quand titulaire et suppléant appartiennent à deux partis différents alliés pour l'élection},
+
+{"categorie": ck_liste_suppleant, "exemple": Ensemble une force pour Paris, "description": Ce sont souvent les mêmes pour le titulaire et le suppléant, mais il peut y avoir des différences, notamment quand titulaire et suppléant appartiennent à deux partis différents alliés pour l'élection},
+
+{"categorie": dc:title, "exemple": Élections législatives de 2017, Paris - 75, circonscription n°01 : profession de foi de Pauline Véron au tour 1, "description": Les données composant le titre apparaissent dans le nom du fichier. Cette donnée peut donc être recomposée par une formule, de sorte de remplir les [] comme suit:
+Élections législatives de [année], [nom du département]
+- [code INSEE du département], circonscription n°l : profession de foi de [prénom nom du candidat/de la candidate titulaire] au tour [1 ou 2]. Ne peut pas être vide},
+
+{"categorie": dc:date, "exemple": 2017-06-11, "description": il y a deux dates par lot de professions de foi : premier tour et second tour.
+les deux dates peuvent apparaître sur le document, il est important de ne retenir dans les métadonnées QUE celle du tour au cours duquel le document est utilisé.
+7-06-11 Le format est obligatoirement : AAAA-MM-JJ. Ne peut pas être vide},
+
+{"categorie": contexte_tour, "exemple": 1, "description": seulement 2 valeurs possibles : 1 ou 2. Ne peut pas être vide},
+
+{"categorie": nom_departement, "exemple": Paris, "description": parmi
+Ain
+Aisne
+Allier
+Alpes-de-Haute-Provence
+Hautes-Alpes
+Alpes-Maritimes
+Ardèche
+Ardennes
+Ariège
+Aube
+Aude
+Aveyron
+Bouches-du-Rhône
+Calvados
+Cantal
+Charente
+Charente-Maritime
+Cher
+Corrèze
+Corse
+Corse-du-Sud
+Haute-Corse
+Côte-d'Or
+Côtes-d'Armor
+Creuse
+Dordogne
+Doubs
+Drôme
+Eure
+Eure-et-Loir
+Finistère
+Gard
+Haute-Garonne
+Gers
+Haute-Marne
+Mayenne
+Meurthe-et-Moselle
+Meuse
+Morbihan
+Moselle
+Nièvre
+Nord
+Oise
+OrneR
+Pas-de-Calais
+Puy-de-Dôme
+Pyrénées-Atlantiques
+Hautes-Pyrénées
+Pyrénées-Orientales
+Bas-Rhin
+Haut-Rhin
+Gironde
+Hérault
+Ille-et-Vilaine
+Indre
+Indre-et-Loire
+Isère
+Jura
+Landes
+Loir-et-Cher
+Loire
+Haute-Loire
+Loire-Atlantique
+Loiret
+Lot
+Lot-et-Garonne
+Lozère
+Sarthe
+Savoie
+Haute-Savoie
+Paris
+Seine-Maritime
+Seine-et-Marne
+Yvelines
+Deux-Sèvres
+Somme
+Tarn
+Tarn-et-Garonne
+Var
+Vaucluse
+Vendée
+Vienne
+Haute-Vienne
+Vosges
+Yonne
+Territoire de Belfort
+Essonne
+Hauts-de-Seine
+Seine-St-Denis
+Val-de-Marne
+Val-d'Oise
+Guadeloupe
+Martinique
+Guyane
+La Réunion
+Saint-Pierre-et-Miquelon
+Mayotte
+Wallis-et-Futuna
+Polynésie-française
+Nouvelle-Calédonie.
+– Si tu ne trouves pas, écris : non précisé.
+},
+
+{"categorie": departement, "exemple": 75, "description": parmi 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 2A 2B 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 971 972 973 974 975 976 986 987 988. – Ne peut pas être vide},
+
+{"categorie": df_circonscription, "exemple": 1, "description": de 1 à 55 selon les départements. Ne peut pas être vide},
+
+{"categorie": bc_sexe_titulaire, "exemple": F, "description": seulement 3 valeurs possible : H F ou NR},
+
+{"categorie": bf_mandat_en_cours_titulaire, "exemple": maire-adjoint, "description": tous les mandats sont à transcrire au masculin. ex : nseillère devient conseiller, adjointe devient adjoint etc.
+"ministre" est considéré comme un "mandat" adjoint
+adjoint au maire co-élu régional conseiller communautaire conseiller d'arrondissement conseiller général conseiller général suppléant conseiller municipal conseiller municipal délégué conseiller régional conseiller régional suppléant conseiller suppléant député député européen
+élu élu départemental élu du milieu rural élu local élu municipal maire maire-adjoint maire d'arrondissement maire délégué ministre parlementaire européen premier ministre secrétaire d'Etat sénateur},
+
+{"categorie": bg_mandat_passe_titulaire, "exemple": adjoint au maire, "description": les mandats assortis de "sortant", "honoraire", "ancien", etc. sont plus facilement repérables en tant que mandats passés},
+
+{"categorie": bh_associations_titulaire, "exemple": NR, "description": activité(s) associative(s) mentionnées par le candidat, à simplifier par thématique :
+- agriculture
+- animaux
+- culture
+- droits de l'homme
+- école
+- environnement
+- femmes
+- groupes de pression
+- humanitaire
+- local
+- non identifié
+- non précise
+- NR
+- politique
+- professionnel
+- religion
+- santé
+- socio-caritatif
+- sports et loisirs
+- syndicat},
+
+{"categorie": bi_autres_statuts_titulaire, "exemple": NR, "description": information personnelle considéré comme significative et fournie par le candidat / la candidate concernant :
+ARMEE / GUERRE appelé combattant déporté déserteur
+objecteur de conscience pompier
+prisonnier de guerre rapatrié réfractaire STO réserve résistant
+JUSTICE condamné détenu interné
+RELIGION catholique chrétien religieux
+SANTE
+accidenté du travail handicapé interné psychiatrique séropositif
+SEXUALITE homosexuel lesbienne trans
+TRAVAIL TRAVAIL cessation d'activité contrat emploi solidarité demandeur d'emploi chômeur en conversion en dispense d'activité en formation-rétroconversion étudiant
+exclu de la vie économique intérimaire licencié licencié économique pensionné pré-retraité retraité sans emploi stagiaire vacataire
+VIE DE FAMILLE célibataire divorcé
+femme au foyer mère
+mère au foyer mère de famille mère de famille au foyer mère de famille nombreuse père de famille père de famille nombreuse
+veuf},
+
+{"categorie": bl_decorations_titulaire, "exemple": non, "description": seulement 2 valeurs possibles : oui –une ou plusieurs décorations mentionnées sur le document– ou non –aucune mention. Ne peut pas être vide},
+
+{"categorie": cc_sexe_suppleant, "exemple": H, "description": même consigne que pour bc_sexe_titulaire),
+
+{"categorie": cf_mandat_en_cours_suppleant, "exemple": NR, "description": même consigne que pour bf_mandat_en_cours_titulaire},
+
+{"categorie": cg_mandat_passe_suppleant, "exemple": NR, "description": même consigne que pour bg_mandat_passe_titulaire},
+
+{"categorie": ch_associations_suppleant, "exemple": NR, "description": même consigne que pour bh_association_titulaire},
+
+{"categorie": ci_autres_status_suppleant, "exemple": NR, "description": même consigne que pour bi_autres_status_titulaire},
+
+{"categorie": cl_decorations_suppleant, "exemple": non, "description": même consigne que pour bl_decorations_titulaire. Ne peut pas être vide}
+
+Tu ne répondras qu'avec les catégories prédéfinies. N'ajoute ni explications ni notes.
+
+
+Ressource 3:
+Il faut que tu renvoies une liste de dictionnaires au format json ayant pour clefs les différentes catégories listées en ressource 2 et pour valeur l'information que tu as trouvé à y associer depuis le texte qui t'est donné. Chaque dictionnaire correspond à un document.
+
+Document à traiter:
+   
+   """
+   
+   
