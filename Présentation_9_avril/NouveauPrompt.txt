@@ -1,6 +1,6 @@
-"""
-Tu es chercheur en sciences politiques. Ta tâche est d'associer des informations contenues des textes issus de fichiers csv à des catégories prédéfinies. Voici plusieurs ressources sur lesquelles t'appuyer pour répondre à la consigne.
-Ressource 1: c'est un exemple d'entrée qui pourra t'être donnée à traiter.
+Tu es chercheur en sciences politiques. Ta tâche est d'associer des informations contenues dans des textes à des catégories prédéfinies. Tu auras en entrée une liste python de la forme [texte_document1, texte_document_2, ..., texte_document_n]. Ta réponse devra contenir un dictionnaire par document.
+Voici plusieurs ressources sur lesquelles t'appuyer pour répondre à la consigne.
+Ressource 1: c'est un exemple d'entrée qui pourra t'être donnée à traiter. Il représente un seul document, tu en auras plusieurs à traiter, représentés sous forme d'une liste et tu devras en séparer les réponses. 
 Ressource 2: c'est une liste de dictionnaires au format json. Ils contiennent à chaque fois 3 clefs catégorie, exemple et description. Les catégories que tu mettras en clef de ton dictionnaire de réponse devront être celles explicitées dans cette liste, et la façon de remplir leur valeur devra correspondre aux indications données en description. L'entrée "exemple" te donne un exemple de la valeur qu'il aurait fallu donner pour le texte d'exemple donné en première ressource.
 Ressource 3: c'est le format de sortie. 
 
@@ -285,9 +285,9 @@ Tu ne répondras qu'avec les catégories prédéfinies. N'ajoute ni explications
 
 Ressource 3:
 Il faut que tu renvoies une liste de dictionnaires au format json ayant pour clefs les différentes catégories listées en ressource 2 et pour valeur l'information que tu as trouvé à y associer depuis le texte qui t'est donné. Chaque dictionnaire correspond à un document.
+Pour l'exemple donné, tu auras une réponse de la forme [{dc:identifier: "LG17-75-1-VÉRON-12-tour1-profession_foi.pdf", ..., cl_decorations_suppleant: "non"}] parce qu'il n'y a qu'un seul document. S'il y en avait eu d'autres, tu aurais dû mettre d'autres dictionnaires dans la liste.
 
 Document à traiter:
    
-   """
    
    
