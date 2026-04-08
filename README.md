@@ -141,9 +141,9 @@ Les tests finaux ont étés réalisés en suivant le même code.
 Code : https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/Tests_finaux/code_test_batch_mistralipynb.ipynb
 
 
-## Partie 5 - Évaluation des résultats
+## Partie 4 - Évaluation des résultats
 
-### 5.0 Performances
+### 4.0 Performances
 
 Pour évaluer les résultats, nous avons créé à la main deux fichiers CSV témoins : un pour chaque batch0 (premier sous-ensemble arbitrairement choisi pour chaque OCR). Nous avons ensuite filtré les résultats grâce à un correcteur de CSV que nous avons codé. 
 
@@ -172,7 +172,7 @@ A partir des ces résultas, nous avons pu calculer le taux d'accuracy global pou
 A noter que nous avons développé un autre procédé pour calculer l'accuracy des modèles testés. Il est également disponsible sur ce GitHub :
 https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/tree/main/code_evaluation_resultats_LLM
 
-### 5.1 Format
+### 4.1 Format
 Les modèles ont performé différemment en termes de qualité de format:
 * Mistral Large ne respecte pas le format demandé mais retourne une réponse organisée de manière stable et réutilisable.
 * Mistral Small ne respecte pas non plus le format demandé mais retourne une réponse organisée et réutilisable. Nous n'avons pas eu l'occasion d'en tester la stabilité.
