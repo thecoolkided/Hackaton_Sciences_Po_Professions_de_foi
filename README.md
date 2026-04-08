@@ -38,23 +38,23 @@ https://github.com/regardscitoyens/professions-foi-candidats-2021/tree/main/docu
 Les documents _falc ont été supprimés en premier lieu de la base de données initiale, car ces fichiers sont complémentaires aux professions de foi déjà existantes et ne font que doubler les informations. Après cette procédure, la base de données a été réduite à **14 631 documents**.
 
 Code : 
-https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/Traitement%20des%20donn%C3%A9es.ipynb
+https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR_new/Traitement%20des%20donn%C3%A9es.ipynb
 
 **Methode 1**
 
 La bibliothèque **PyMuPDF (fitz)** est utilisée pour l’extraction du texte à partir des fichiers PDF. Elle permet un traitement rapide et efficace des documents, en donnant accès au contenu textuel structuré par pages et blocs, et a été appliquée au corpus initial.
  
-Un résultat satisfaisant a été obtenu pour la plupart des fichiers PDF. **3085 fichiers** sur 14 631 se sont avérés être des fichiers PDF dont il était impossible d'extraire le texte, car celui-ci faisait partie intégrante de l'image. Pour ces fichiers, une méthode supplémentaire d'extraction de texte a été utilisée.
+Un résultat satisfaisant a été obtenu pour la plupart des fichiers PDF. **3962 fichiers** sur 14 631 se sont avérés être des fichiers PDF dont il était impossible d'extraire le texte, car celui-ci faisait partie intégrante de l'image. Pour ces fichiers, une méthode supplémentaire d'extraction de texte a été utilisée.
 
 Code : 
-https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/SP_pymupython_OCR.ipynb
+https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR_new/SP_pymupython_OCR.ipynb
 
 **Methode 2**
 
 Pour les documents dont le texte fait partie de l'image et ne peut être copié de manière classique à l'aide des bibliothèques simples de traitement des documents PDF, nous avons utilisé la technologie de reconnaissance optique de caractères (OCR) basée sur le modèle Mistral OCR. Plus précisément, nous avons utilisé le modèle **« mistral-ocr-latest »**. Cette méthode est plus lente et payante, mais elle donne de bons résultats.
 
 Code : 
-https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR/SP_Mistral_OCR.ipynb
+https://github.com/thecoolkided/Hackaton_Sciences_Po_Professions_de_foi/blob/main/OCR_new/SP_Mistral_OCR.ipynb
 
 Exemples de résultats obtenus: 
 
